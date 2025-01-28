@@ -810,6 +810,11 @@
       "$type": "sizing",
       "$value": "16",
       "$description": "Test Base Value"
+    },
+    "Base x 2": {
+      "$type": "sizing",
+      "$value": "32",
+      "$description": "Test Base x 2"
     }
   },
   "$themes": [],
