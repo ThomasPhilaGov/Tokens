@@ -824,6 +824,12 @@
       "$type": "borderRadius",
       "$value": "32",
       "$description": "Test Base Radius"
+    },
+    "Headings": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Montserrat"
+      }
     }
   },
   "$themes": [],
