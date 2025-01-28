@@ -784,26 +784,6 @@
         }
       },
       "White": {
-        "white-50": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
-        "white-100": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
-        "white-200": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
-        "white-300": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
-        "white-400": {
-          "$type": "color",
-          "$value": "#ffffff"
-        },
         "white-500": {
           "$type": "color",
           "$value": "#ffffff"
