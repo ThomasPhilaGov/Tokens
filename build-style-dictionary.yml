@@ -1,0 +1,39 @@
+name: Build Style Dictionary
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    name: Build Style Dictionary
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Use the Node.js version compatible with your project
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # Step 4: Build the Style Dictionary
+      - name: Build Style Dictionary
+        run: npm run build
+
+      # Step 5: (Optional) Upload artifacts
+      - name: Upload Build Artifacts
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: style-dictionary-build
+          path: build/ # Adjust the path to your Style Dictionary build output
