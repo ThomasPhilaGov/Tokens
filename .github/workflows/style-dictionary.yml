@@ -10,27 +10,27 @@ on:
 
 jobs:
   build:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout respository
-      uses: actions/checkout@v3
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-    - name: Install dependencies
-      run: npm install style-dictionary --save-dev
+      - name: Install dependencies
+        run: npm install style-dictionary --save-dev
 
-    - name: Run Style Dictionary
-      run: npx style-dictionary build
+      - name: Run Style Dictionary
+        run: npx style-dictionary build
 
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        git add build/variables.css
-        git commit -m "Auto-generate CSS file"
-        git push
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add build/variables.css
+          git commit -m "Auto-generate CSS file"
+          git push
