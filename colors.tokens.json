@@ -815,6 +815,10 @@
       "$type": "sizing",
       "$value": "32",
       "$description": "Test Base x 2"
+    },
+    "Test Spacing": {
+      "$type": "spacing",
+      "$value": "16"
     }
   },
   "$themes": [],
