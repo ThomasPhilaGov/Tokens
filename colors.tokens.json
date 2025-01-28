@@ -819,11 +819,6 @@
     "Test Spacing": {
       "$type": "spacing",
       "$value": "16"
-    },
-    "Base Radius": {
-      "$type": "borderRadius",
-      "$value": "32",
-      "$description": "Test Base Radius"
     }
   },
   "$themes": [],
