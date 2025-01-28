@@ -30,3 +30,16 @@ jobs:
           git add build/
           git commit -m "Auto-generate design token outputs" || echo "No changes to commit"
           git push
+
+      - name: Install Storybook dependencies
+        run: npm install
+
+      - name: Build Storybook
+        run: npm run build-storybook
+
+      - name: Deploy Storybook to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static
+          publish_branch: gh-pages
