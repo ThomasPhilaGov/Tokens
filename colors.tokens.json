@@ -805,6 +805,11 @@
           "$value": "#6b6b6b"
         }
       }
+    },
+    "Base": {
+      "$type": "sizing",
+      "$value": "16",
+      "$description": "Test Base Value"
     }
   },
   "$themes": [],
