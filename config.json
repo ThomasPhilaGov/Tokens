@@ -1,0 +1,15 @@
+{
+    "source": ["colors.tokens.json"],
+    "platforms": {
+        "css": {
+            "trasnformGroup": "css",
+            "buildPath": "build/",
+            "files": [
+                {
+                    "destination": "variables.css",
+                    "format": "css/variables"
+                }
+            ]
+        }
+    }
+}
