@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - css-json
     paths:
       - 'colors.tokens.json'
       - 'config.json'
