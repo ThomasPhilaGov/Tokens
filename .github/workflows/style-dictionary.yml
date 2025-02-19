@@ -27,7 +27,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install style-dictionary --save-dev
+        run: npm install
 
       - name: Run Style Dictionary
         run: npx style-dictionary build
@@ -58,7 +58,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install -g sass
+        run: npm install
 
       - name: Create build directory
         run: mkdir -p build
