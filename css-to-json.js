@@ -39,9 +39,10 @@ const jsonOutput = {
 };
 
 Object.keys(resolvedVariables).forEach(variableName => {
+  const resolvedValue = resolveVariable(resolvedVariables[variableName]);
   jsonOutput["Colors/Mode 1"][variableName] = {
     "$type": "color",
-    "$value": resolvedVariables[variableName]
+    "$value": resolvedValue
   };
 });
 
