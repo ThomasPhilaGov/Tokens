@@ -1,5 +1,4 @@
 {
-  "global": {},
   "Colors/Mode 1": {
     "dark-ben-franklin-blue": {
       "$type": "color",
@@ -8,15 +7,18 @@
     },
     "ben-franklin-blue": {
       "$type": "color",
-      "$value": "#2176d2"
+      "$value": "#2176d2",
+      "$description": "Primary color"
     },
     "dark-gray": {
       "$type": "color",
-      "$value": "#444444"
+      "$value": "#444444",
+      "$description": "Greyscale Color"
     },
     "light-ben-franklin": {
       "$type": "color",
-      "$value": "#96c9ff"
+      "$value": "#96c9ff",
+      "$description": "Primary Light Color"
     },
     "electric-blue": {
       "$type": "color",
@@ -24,7 +26,8 @@
     },
     "bell-yellow": {
       "$type": "color",
-      "$value": "#f3c613"
+      "$value": "#f3c613",
+      "$description": "Warning Color"
     },
     "flyers-orange": {
       "$type": "color",
@@ -48,15 +51,18 @@
     },
     "light-blue": {
       "$type": "color",
-      "$value": "#daedfe"
+      "$value": "#daedfe",
+      "$description": "Alert Background Color"
     },
     "phanatic-green": {
       "$type": "color",
-      "$value": "#3a833c"
+      "$value": "#3a833c",
+      "$description": "Success color"
     },
     "love-park-red": {
       "$type": "color",
-      "$value": "#cc3000"
+      "$value": "#cc3000",
+      "$description": "Danger Color"
     },
     "pride-purple": {
       "$type": "color",
@@ -68,21 +74,43 @@
     },
     "medium-gray": {
       "$type": "color",
-      "$value": "#a1a1a1"
+      "$value": "#a1a1a1",
+      "$description": "Greyscale Color"
     },
     "sidewalk": {
       "$type": "color",
-      "$value": "#cfcfcf"
+      "$value": "#cfcfcf",
+      "$description": "Greyscale Color"
     },
     "ghost-gray": {
       "$type": "color",
-      "$value": "#f0f0f0"
+      "$value": "#f0f0f0",
+      "$description": "Greyscale Color"
+    },
+    "white": {
+      "$type": "color",
+      "$value": "#ffffff",
+      "$description": "Invert Color"
+    },
+    "light-bell-bg": {
+      "$type": "color",
+      "$value": "#fff7d0",
+      "$description": "Alert Background Color"
+    },
+    "light-kelly-drive-bg": {
+      "$type": "color",
+      "$value": "#dcf8d8",
+      "$description": "Alert Background Color"
+    },
+    "light-red-bg": {
+      "$type": "color",
+      "$value": "#fee7e7",
+      "$description": "Alert Background Color"
     }
   },
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "global",
       "Colors/Mode 1"
     ]
   }
