@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "style-dictionary": "^4.3.3"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
   }
 }
