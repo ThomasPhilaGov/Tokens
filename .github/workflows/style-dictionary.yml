@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
-      - css-json
+      - css-json  # Add your branch name here
     paths:
       - 'colors.tokens.json'
       - 'config.json'
-      - 'colors.scss'  # Update this to the new SCSS file path
+      - 'colors.scss'
 
 permissions:
   contents: write
@@ -36,7 +36,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add build/variables.css
+          git add .
           git commit -m "Update CSS variables"
           git push
 
@@ -57,7 +57,7 @@ jobs:
         run: npm install css node-sass
 
       - name: Convert SCSS to JSON
-        run: node css-to-json.js colors.scss build/variables.json  # Update this to the new SCSS file path
+        run: node css-to-json.js colors.scss build/variables.json
 
       - name: Commit and push JSON changes
         run: |
