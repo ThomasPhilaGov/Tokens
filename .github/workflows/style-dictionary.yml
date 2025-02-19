@@ -42,7 +42,7 @@ jobs:
           else
             git commit -m "Update CSS variables"
             git push
-          fi  # Add this missing fi
+          fi
 
   css_to_json:
     runs-on: ubuntu-latest
@@ -76,4 +76,4 @@ jobs:
           else
             git commit -m "Convert SCSS to JSON"
             git push
-          fi  # Add this missing fi
+          fi
