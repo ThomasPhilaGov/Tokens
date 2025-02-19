@@ -11,13 +11,20 @@ const cssContent = result.css.toString();
 
 const parsedCss = css.parse(cssContent);
 
-const jsonOutput = {};
+const jsonOutput = {
+  "global": {},
+  "Colors/Mode 1": {}
+};
 
 parsedCss.stylesheet.rules.forEach(rule => {
   if (rule.type === 'rule') {
     rule.declarations.forEach(declaration => {
       if (declaration.type === 'declaration') {
-        jsonOutput[declaration.property] = declaration.value;
+        const propertyName = declaration.property.replace(/-([a-z])/g, g => g[1].toUpperCase());
+        jsonOutput["Colors/Mode 1"][propertyName] = {
+          "$type": "color",
+          "$value": declaration.value
+        };
       }
     });
   }
