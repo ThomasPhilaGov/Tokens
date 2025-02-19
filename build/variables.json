@@ -1,4 +1,133 @@
 {
   "global": {},
-  "Colors/Mode 1": {}
+  "Colors/Mode 1": {
+    "grey-light": {
+      "$type": "color",
+      "$value": "$sidewalk-grey"
+    },
+    "gray-light": {
+      "$type": "color",
+      "$value": "$sidewalk-gray"
+    },
+    "dark": {
+      "$type": "color",
+      "$value": "$grey-dark"
+    },
+    "dark-invert": {
+      "$type": "color",
+      "$value": "$white"
+    },
+    "light": {
+      "$type": "color",
+      "$value": "$ghost-grey"
+    },
+    "light-invert": {
+      "$type": "color",
+      "$value": "$black"
+    },
+    "success": {
+      "$type": "color",
+      "$value": "$phanatic-green"
+    },
+    "success-invert": {
+      "$type": "color",
+      "$value": "$white"
+    },
+    "success-light": {
+      "$type": "color",
+      "$value": "$phanatic-green-light"
+    },
+    "success-dark": {
+      "$type": "color",
+      "$value": "$phanatic-green-dark"
+    },
+    "warning": {
+      "$type": "color",
+      "$value": "$bell-yellow"
+    },
+    "warning-invert": {
+      "$type": "color",
+      "$value": "$grey-dark"
+    },
+    "warning-light": {
+      "$type": "color",
+      "$value": "$bell-yellow-light"
+    },
+    "warning-dark": {
+      "$type": "color",
+      "$value": "$grey-dark"
+    },
+    "danger": {
+      "$type": "color",
+      "$value": "$love-park-red"
+    },
+    "danger-invert": {
+      "$type": "color",
+      "$value": "$white"
+    },
+    "danger-light": {
+      "$type": "color",
+      "$value": "$love-park-red-light"
+    },
+    "danger-dark": {
+      "$type": "color",
+      "$value": "$love-park-red-dark"
+    },
+    "primary": {
+      "$type": "color",
+      "$value": "$ben-franklin-blue"
+    },
+    "primary-invert": {
+      "$type": "color",
+      "$value": "$white"
+    },
+    "primary-dark": {
+      "$type": "color",
+      "$value": "$ben-franklin-blue-dark"
+    },
+    "primary-light": {
+      "$type": "color",
+      "$value": "$ben-franklin-blue-light"
+    },
+    "link": {
+      "$type": "color",
+      "$value": "$ben-franklin-blue"
+    },
+    "link-invert": {
+      "$type": "color",
+      "$value": "$white"
+    },
+    "link-light": {
+      "$type": "color",
+      "$value": "$ben-franklin-blue-light"
+    },
+    "link-dark": {
+      "$type": "color",
+      "$value": "$ben-franklin-blue-dark"
+    },
+    "info": {
+      "$type": "color",
+      "$value": "$ben-franklin-blue"
+    },
+    "info-invert": {
+      "$type": "color",
+      "$value": "$white"
+    },
+    "info-light": {
+      "$type": "color",
+      "$value": "$ben-franklin-blue-light"
+    },
+    "info-dark": {
+      "$type": "color",
+      "$value": "$ben-franklin-blue-dark"
+    },
+    "title-color": {
+      "$type": "color",
+      "$value": "$grey-dark"
+    },
+    "error-light": {
+      "$type": "color",
+      "$value": "$love-park-red-light"
+    }
+  }
 }
