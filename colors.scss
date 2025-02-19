@@ -7,34 +7,31 @@ Test
 */
 
 /*Variables, mixins and other helpers*/
-@import "helpers.scss";
+@import "css-imports/helpers.scss";
 
 /*The bulma library*/
-@import "bulma/bulma.sass";
+@import "css-imports/bulma/bulma.sass";
 
 /*The bulma checkradio plugin*/
-@import "bulma-checkradio/src/sass/index.sass";
+@import "css-imports/bulma-checkradio/src/sass/index.sass";
 
 /*Overall project styles*/
-@import "base.scss";
+@import "css-imports/base.scss";
 
 /*Styles for form inputs components*/
-@import "inputs.scss";
+@import "css-imports/inputs.scss";
 
 /*Styles for buttons*/
-@import "buttons.scss";
+@import "css-imports/buttons.scss";
 
 /*Styles for html headings*/
-@import "headings.scss";
+@import "css-imports/headings.scss";
 
 /*Styles for html tables*/
-@import "table.scss";
+@import "css-imports/table.scss";
 
 /*Styles for th content class*/
-@import "content.scss";
+@import "css-imports/content.scss";
 
 /*Vendors overwrites*/
-@import "vendors/vendors.scss";
-
-/*Vendors overwrites*/
-@import "vendors/vendors.scss";
+@import "css-imports/vendors/vendors.scss";
