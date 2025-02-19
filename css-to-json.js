@@ -15,22 +15,16 @@ const variables = {};
 
 while ((match = variableRegex.exec(scssContent)) !== null) {
   const variableName = match[1];
-  const variableValue = match[2];
-  variables[variableName] = variableValue;
-}
+  let variableValue = match[2];
 
-// Resolve variable references
-function resolveVariable(value) {
+  // Resolve nested variable references
   const variableReferenceRegex = /\$([a-zA-Z0-9-_]+)/g;
-  return value.replace(variableReferenceRegex, (match, variableName) => {
+  variableValue = variableValue.replace(variableReferenceRegex, (match, variableName) => {
     return variables[variableName] || match;
   });
-}
 
-const resolvedVariables = {};
-Object.keys(variables).forEach(variableName => {
-  resolvedVariables[variableName] = resolveVariable(variables[variableName]);
-});
+  variables[variableName] = variableValue;
+}
 
 // Format variables into the desired JSON structure
 const jsonOutput = {
@@ -38,11 +32,10 @@ const jsonOutput = {
   "Colors/Mode 1": {}
 };
 
-Object.keys(resolvedVariables).forEach(variableName => {
-  const resolvedValue = resolveVariable(resolvedVariables[variableName]);
+Object.keys(variables).forEach(variableName => {
   jsonOutput["Colors/Mode 1"][variableName] = {
     "$type": "color",
-    "$value": resolvedValue
+    "$value": variables[variableName]
   };
 });
 

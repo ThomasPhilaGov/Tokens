@@ -1,57 +1,34 @@
-// City of Philadelphia Colors
-$ben-franklin-blue-light: hsl(208.3, 94.7%, 92.5%); //#daedfe
-$ben-franklin-blue: hsl(211.2, 72.8%, 47.6%); //#2176d2
-$ben-franklin-blue-dark: hsl(211.2, 81.1%, 31.2%); //#0f4d90
-$ben-franklin-blue-invert: hsl(0, 0%, 94.1%); //#f0f0f0
+/*
+All styles imported here
+With exception of deprecated styles
+*/
 
-$electric-blue: hsl(191.7, 92.9%, 55.7%); //#25CEF7
+/*Variables, mixins and other helpers*/
+@import "helpers.scss";
 
-$bell-yellow: hsl(47.9, 90.3%, 51.4%); //#f3c613
-$bell-yellow-light: hsl(49.8, 100%, 90.8%); //#fff7d0
+/*The bulma library*/
+@import "bulma/bulma.sass";
 
-$phanatic-green-light: hsl(112.5, 69.6%, 91%); //#dcf8d8
-$phanatic-green: hsl(121.6, 38.6%, 37.1%); //#3a833c
-$phanatic-green-dark: hsl(120, 37.9%, 25.9%); //#295b29
+/*The bulma checkradio plugin*/
+@import "bulma-checkradio/src/sass/index.sass";
 
-$love-park-red-light: hsl(0, 92%, 95.1%); //#fee7e7
-$love-park-red: hsl(14.1, 100%, 40%); //#cc3000
-$love-park-red-dark: hsl(12.9, 100%, 32.9%); //#a82400
+/*Overall project styles*/
+@import "base.scss";
 
-$flyers-orange: hsl(35, 100%, 48.8%); //#F99300
+/*Styles for form inputs components*/
+@import "inputs.scss";
 
-$ghost-grey: hsl(0, 0%, 94.1%); //#f0f0f0
-$ghost-gray: hsl(0, 0%, 94.1%); //#f0f0f0
-$sidewalk-grey: hsl(0, 0%, 81.2%); //#cfcfcf
-$sidewalk-gray: hsl(0, 0%, 81.2%); //#cfcfcf
+/*Styles for buttons*/
+@import "buttons.scss";
 
-$grey-light: $sidewalk-grey;
-$gray-light: $sidewalk-gray;
-$grey-medium: hsl(0, 0%, 63.1%); //#a1a1a1
-$gray-medium: hsl(0, 0%, 63.1%); //#a1a1a1
-$grey-dark: hsl(0, 0%, 26.7%); //#444444
-$gray-dark: hsl(0, 0%, 26.7%); //#444444
+/*Styles for html headings*/
+@import "headings.scss";
 
-$white: hsl(255, 100%, 100%); //#ffffff
-$black: hsl(0, 0%, 0%); //#000000
-$dark: $grey-dark;
-$dark-invert: $white;
+/*Styles for html tables*/
+@import "table.scss";
 
-// Using the variables in CSS rules
-body {
-  background-color: $ben-franklin-blue;
-  color: $ben-franklin-blue-invert;
-}
+/*Styles for th content class*/
+@import "content.scss";
 
-a {
-  color: $electric-blue;
-}
-
-.alert {
-  background-color: $love-park-red;
-  color: $love-park-red-light;
-}
-
-.header {
-  background-color: $ben-franklin-blue-light;
-  color: $ben-franklin-blue-dark;
-}
+/*Vendors overwrites*/
+@import "vendors/vendors.scss";
