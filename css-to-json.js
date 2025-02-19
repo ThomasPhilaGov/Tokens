@@ -1,18 +1,19 @@
 const fs = require('fs');
-const path = require('path');
-const sass = require('node-sass');
+const { renderSync } = require('sass');
 
 const inputFilePath = process.argv[2];
 const outputFilePath = process.argv[3];
 
-// Read SCSS file content
-const scssContent = fs.readFileSync(inputFilePath, 'utf8');
+// Compile SCSS to CSS
+const result = renderSync({ file: inputFilePath });
+const cssContent = result.css.toString();
 
 // Extract SCSS variables
 const variableRegex = /^\$([a-zA-Z0-9-_]+):\s*(.+);$/gm;
 let match;
 const variables = {};
 
+const scssContent = fs.readFileSync(inputFilePath, 'utf8');
 while ((match = variableRegex.exec(scssContent)) !== null) {
   const variableName = match[1];
   let variableValue = match[2];
