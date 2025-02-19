@@ -1,33 +1,36 @@
 const fs = require('fs');
+const path = require('path');
 const sass = require('node-sass');
-const css = require('css');
 
 const inputFilePath = process.argv[2];
 const outputFilePath = process.argv[3];
 
-// Compile SCSS to CSS
-const result = sass.renderSync({ file: inputFilePath });
-const cssContent = result.css.toString();
+// Read SCSS file content
+const scssContent = fs.readFileSync(inputFilePath, 'utf8');
 
-const parsedCss = css.parse(cssContent);
+// Extract SCSS variables
+const variableRegex = /^\$([a-zA-Z0-9-_]+):\s*(.+);$/gm;
+let match;
+const variables = {};
 
+while ((match = variableRegex.exec(scssContent)) !== null) {
+  const variableName = match[1];
+  const variableValue = match[2];
+  variables[variableName] = variableValue;
+}
+
+// Format variables into the desired JSON structure
 const jsonOutput = {
   "global": {},
   "Colors/Mode 1": {}
 };
 
-parsedCss.stylesheet.rules.forEach(rule => {
-  if (rule.type === 'rule') {
-    rule.declarations.forEach(declaration => {
-      if (declaration.type === 'declaration') {
-        const propertyName = declaration.property.replace(/-([a-z])/g, g => g[1].toUpperCase());
-        jsonOutput["Colors/Mode 1"][propertyName] = {
-          "$type": "color",
-          "$value": declaration.value
-        };
-      }
-    });
-  }
+Object.keys(variables).forEach(variableName => {
+  jsonOutput["Colors/Mode 1"][variableName] = {
+    "$type": "color",
+    "$value": variables[variableName]
+  };
 });
 
+// Write JSON output to file
 fs.writeFileSync(outputFilePath, JSON.stringify(jsonOutput, null, 2));

@@ -58,7 +58,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install css node-sass
+        run: npm install node-sass
 
       - name: Create build directory
         run: mkdir -p build
