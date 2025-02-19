@@ -35,56 +35,23 @@ $white: hsl(255, 100%, 100%); //#ffffff
 $black: hsl(0, 0%, 0%); //#000000
 $dark: $grey-dark;
 $dark-invert: $white;
-$light: $ghost-grey;
-$light-invert: $black;
 
-$success: $phanatic-green;
-$success-invert: $white;
-$success-light: $phanatic-green-light;
-$success-dark: $phanatic-green-dark;
+// Using the variables in CSS rules
+body {
+  background-color: $ben-franklin-blue;
+  color: $ben-franklin-blue-invert;
+}
 
-$warning: $bell-yellow;
-$warning-invert: $grey-dark;
-$warning-light: $bell-yellow-light;
-$warning-dark: $grey-dark;
+a {
+  color: $electric-blue;
+}
 
-$danger: $love-park-red;
-$danger-invert: $white;
-$danger-light: $love-park-red-light;
-$danger-dark: $love-park-red-dark;
+.alert {
+  background-color: $love-park-red;
+  color: $love-park-red-light;
+}
 
-$primary: $ben-franklin-blue;
-$primary-invert: $white;
-$primary-dark: $ben-franklin-blue-dark;
-$primary-light: $ben-franklin-blue-light;
-
-$link: $ben-franklin-blue;
-$link-invert: $white;
-$link-light: $ben-franklin-blue-light;
-$link-dark: $ben-franklin-blue-dark;
-
-$info: $ben-franklin-blue;
-$info-invert: $white;
-$info-light: $ben-franklin-blue-light;
-$info-dark: $ben-franklin-blue-dark;
-
-$title-color: $grey-dark;
-$error-light: $love-park-red-light;
-
-:root {
-    --dark-ben-franklin-blue: #0f4d90; /* Primary CTA Color */
-    --ben-franklin-blue: #2176d2;
-    --dark-gray: #444444;
-    --light-ben-franklin: #96c9ff;
-    --flyers-orange: #f99300;
-    --kelly-drive-green: #58c04d;
-    --light-red: #fed0d0;
-    --light-kelly-drive: #b9f2b1;
-    --light-blue: #daedfe;
-    --love-park-red: #cc3000;
-    --pride-purple: #9400c6;
-    --black: #000000;
-    --medium-gray: #a1a1a1;
-    --sidewalk: #cfcfcf;
-    --ghost-gray: #f0f0f0;
-  }
+.header {
+  background-color: $ben-franklin-blue-light;
+  color: $ben-franklin-blue-dark;
+}
