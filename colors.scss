@@ -35,18 +35,38 @@ $white: hsl(255, 100%, 100%); //#ffffff
 $black: hsl(0, 0%, 0%); //#000000
 $dark: $grey-dark;
 $dark-invert: $white;
+$light: $ghost-grey;
+$light-invert: $black;
 
-// Using the variables in CSS rules
-body {
-  background-color: $ben-franklin-blue;
-  color: $ben-franklin-blue-invert;
-}
+$success: $phanatic-green;
+$success-invert: $white;
+$success-light: $phanatic-green-light;
+$success-dark: $phanatic-green-dark;
 
-a {
-  color: $electric-blue;
-}
+$warning: $bell-yellow;
+$warning-invert: $grey-dark;
+$warning-light: $bell-yellow-light;
+$warning-dark: $grey-dark;
 
-.alert {
-  background-color: $love-park-red;
-  color: $love-park-red-light;
-}
+$danger: $love-park-red;
+$danger-invert: $white;
+$danger-light: $love-park-red-light;
+$danger-dark: $love-park-red-dark;
+
+$primary: $ben-franklin-blue;
+$primary-invert: $white;
+$primary-dark: $ben-franklin-blue-dark;
+$primary-light: $ben-franklin-blue-light;
+
+$link: $ben-franklin-blue;
+$link-invert: $white;
+$link-light: $ben-franklin-blue-light;
+$link-dark: $ben-franklin-blue-dark;
+
+$info: $ben-franklin-blue;
+$info-invert: $white;
+$info-light: $ben-franklin-blue-light;
+$info-dark: $ben-franklin-blue-dark;
+
+$title-color: $grey-dark;
+$error-light: $love-park-red-light;
