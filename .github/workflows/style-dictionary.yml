@@ -7,7 +7,7 @@ on:
     paths:
       - 'colors.tokens.json'
       - 'config.json'
-      - 'path/to/your/new-file.css'  # Update this to the new CSS file path
+      - 'colors.scss'  # Update this to the new SCSS file path
 
 permissions:
   contents: write
@@ -53,15 +53,15 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install
+        run: npm install css node-sass
 
-      - name: Convert CSS to JSON
-        run: node css-to-json.js colors.scss build/variables.json  # Update this to the new CSS file path
+      - name: Convert SCSS to JSON
+        run: node css-to-json.js colors.scss build/variables.json  # Update this to the new SCSS file path
 
       - name: Commit and push JSON changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add build/variables.json
-          git commit -m "Convert CSS to JSON"
+          git commit -m "Convert SCSS to JSON"
           git push

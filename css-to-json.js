@@ -1,10 +1,14 @@
 const fs = require('fs');
+const sass = require('node-sass');
 const css = require('css');
 
 const inputFilePath = process.argv[2];
 const outputFilePath = process.argv[3];
 
-const cssContent = fs.readFileSync(inputFilePath, 'utf8');
+// Compile SCSS to CSS
+const result = sass.renderSync({ file: inputFilePath });
+const cssContent = result.css.toString();
+
 const parsedCss = css.parse(cssContent);
 
 const jsonOutput = {};
