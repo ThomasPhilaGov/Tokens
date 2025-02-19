@@ -7,7 +7,7 @@ on:
     paths:
       - 'colors.tokens.json'
       - 'config.json'
-      - 'build/variables.css'  # Add this to trigger the second job when CSS changes
+      - 'path/to/your/new-file.css'  # Update this to the new CSS file path
 
 permissions:
   contents: write
@@ -56,7 +56,7 @@ jobs:
         run: npm install
 
       - name: Convert CSS to JSON
-        run: node css-to-json.js build/variables.css build/variables.json
+        run: node css-to-json.js path/to/your/new-file.css build/variables.json  # Update this to the new CSS file path
 
       - name: Commit and push JSON changes
         run: |
