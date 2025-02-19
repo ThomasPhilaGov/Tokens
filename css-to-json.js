@@ -19,16 +19,29 @@ while ((match = variableRegex.exec(scssContent)) !== null) {
   variables[variableName] = variableValue;
 }
 
+// Resolve variable references
+function resolveVariable(value) {
+  const variableReferenceRegex = /\$([a-zA-Z0-9-_]+)/g;
+  return value.replace(variableReferenceRegex, (match, variableName) => {
+    return variables[variableName] || match;
+  });
+}
+
+const resolvedVariables = {};
+Object.keys(variables).forEach(variableName => {
+  resolvedVariables[variableName] = resolveVariable(variables[variableName]);
+});
+
 // Format variables into the desired JSON structure
 const jsonOutput = {
   "global": {},
   "Colors/Mode 1": {}
 };
 
-Object.keys(variables).forEach(variableName => {
+Object.keys(resolvedVariables).forEach(variableName => {
   jsonOutput["Colors/Mode 1"][variableName] = {
     "$type": "color",
-    "$value": variables[variableName]
+    "$value": resolvedVariables[variableName]
   };
 });
 
