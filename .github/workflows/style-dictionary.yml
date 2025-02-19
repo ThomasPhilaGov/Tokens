@@ -56,7 +56,7 @@ jobs:
         run: npm install
 
       - name: Convert CSS to JSON
-        run: node css-to-json.js path/to/your/new-file.css build/variables.json  # Update this to the new CSS file path
+        run: node css-to-json.js colors.scss build/variables.json  # Update this to the new CSS file path
 
       - name: Commit and push JSON changes
         run: |
