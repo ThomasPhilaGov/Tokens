@@ -71,6 +71,44 @@ $info-dark: $ben-franklin-blue-dark;
 $title-color: $grey-dark;
 $error-light: $love-park-red-light;
 
+$title-color: $grey-dark;
+$error-light: $love-park-red-light;
+
+// Adding new color variables
+$success: $green;
+$success-invert: $white;
+$success-light: $green-light;
+$success-dark: $green-dark;
+
+// Modifying existing variables
+$link: $ben-franklin-blue;
+$link-invert: $white;
+$link-light: $ben-franklin-blue-light;
+$link-dark: $ben-franklin-blue-dark;
+
+$info: $ben-franklin-blue;
+$info-invert: $white;
+$info-light: $ben-franklin-blue-light;
+$info-dark: $ben-franklin-blue-dark;
+
+// Adding new styles
+body {
+  background-color: $primary;
+  color: $title-color;
+}
+
+a {
+  color: $link;
+  &:hover {
+    color: $link-dark;
+  }
+}
+
+.alert-success {
+  background-color: $success;
+  color: $success-invert;
+}
+
 //This is a test to see if the action is working
 //Let's try it again
 // And again :)
