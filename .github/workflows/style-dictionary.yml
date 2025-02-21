@@ -22,9 +22,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install Python 2
-        run: sudo apt-get install python2
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -33,8 +30,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install scss-to-json
-        run: npm install scss-to-json --save-dev
+      - name: Install sass
+        run: npm install sass --save-dev
 
       - name: Convert SCSS to JSON
         run: npx scss-to-json css-imports/variables.scss --output build/variables.json
