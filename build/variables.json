@@ -1,4 +1,224 @@
 {
   "global": {},
-  "Colors/Mode 1": {}
+  "Colors/Mode 1": {
+    "global": {},
+    "Colors/Mode 1": {
+      "family-sans-serif": {
+        "$type": "color",
+        "$value": "'Open Sans', BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif"
+      },
+      "family-secondary": {
+        "$type": "color",
+        "$value": "Montserrat, BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif"
+      },
+      "radius": {
+        "$type": "color",
+        "$value": "0"
+      },
+      "radius-large": {
+        "$type": "color",
+        "$value": "0"
+      },
+      "notification-padding": {
+        "$type": "color",
+        "$value": "1rem 2.5rem 1rem 1rem"
+      },
+      "navbar-item-img-max-height": {
+        "$type": "color",
+        "$value": "75px"
+      },
+      "navbar-padding-vertical": {
+        "$type": "color",
+        "$value": "0.5rem"
+      },
+      "navbar-padding-horizontal": {
+        "$type": "color",
+        "$value": "1rem"
+      },
+      "navbar-background-color": {
+        "$type": "color",
+        "$value": "$ben-franklin-blue-dark"
+      },
+      "navbar-item-color": {
+        "$type": "color",
+        "$value": "$white"
+      },
+      "navbar-item-hover-background-color": {
+        "$type": "color",
+        "$value": "transparent"
+      },
+      "navbar-item-hover-color": {
+        "$type": "color",
+        "$value": "$electric-blue"
+      },
+      "navbar-dropdown-radius": {
+        "$type": "color",
+        "$value": "0"
+      },
+      "navbar-dropdown-boxed-radius": {
+        "$type": "color",
+        "$value": "0"
+      },
+      "navbar-dropdown-boxed-shadow": {
+        "$type": "color",
+        "$value": "none"
+      },
+      "footer-background-color": {
+        "$type": "color",
+        "$value": "$ben-franklin-blue-dark"
+      },
+      "footer-padding": {
+        "$type": "color",
+        "$value": "rem-calc(10px)"
+      },
+      "footer-color": {
+        "$type": "color",
+        "$value": "$white"
+      },
+      "input-background-color": {
+        "$type": "color",
+        "$value": "$ghost-grey"
+      },
+      "input-focus-box-shadow-size": {
+        "$type": "color",
+        "$value": "none"
+      },
+      "input-border-color": {
+        "$type": "color",
+        "$value": "transparent"
+      },
+      "input-hover-border-color": {
+        "$type": "color",
+        "$value": "transparent"
+      },
+      "input-focus-border-color": {
+        "$type": "color",
+        "$value": "$electric-blue"
+      },
+      "input-shadow": {
+        "$type": "color",
+        "$value": "none"
+      },
+      "tabs-boxed-link-hover-background-color": {
+        "$type": "color",
+        "$value": "none"
+      },
+      "tabs-link-hover-color": {
+        "$type": "color",
+        "$value": "$ben-franklin-blue-dark"
+      },
+      "table-striped-row-even-background-color": {
+        "$type": "color",
+        "$value": "$ghost-grey"
+      },
+      "modal-content-width": {
+        "$type": "color",
+        "$value": "760px"
+      },
+      "modal-card-head-padding": {
+        "$type": "color",
+        "$value": "15px"
+      },
+      "modal-card-body-padding": {
+        "$type": "color",
+        "$value": "15px"
+      },
+      "title-line-height": {
+        "$type": "color",
+        "$value": "1.4"
+      },
+      "body-background-color": {
+        "$type": "color",
+        "$value": "$white"
+      },
+      "body-size": {
+        "$type": "color",
+        "$value": "16px"
+      },
+      "body-min-width": {
+        "$type": "color",
+        "$value": "300px"
+      },
+      "body-rendering": {
+        "$type": "color",
+        "$value": "optimizeLegibility"
+      },
+      "body-weight": {
+        "$type": "color",
+        "$value": "400"
+      },
+      "button-padding-vertical": {
+        "$type": "color",
+        "$value": "0.75rem"
+      },
+      "button-padding-horizontal": {
+        "$type": "color",
+        "$value": "1.5rem"
+      },
+      "size-small": {
+        "$type": "color",
+        "$value": "0.875rem"
+      },
+      "size-medium": {
+        "$type": "color",
+        "$value": "1rem"
+      },
+      "size-normal": {
+        "$type": "color",
+        "$value": "1rem"
+      },
+      "size-large": {
+        "$type": "color",
+        "$value": "1.125rem"
+      },
+      "line-height-medium": {
+        "$type": "color",
+        "$value": "1.5rem"
+      },
+      "line-height-large": {
+        "$type": "color",
+        "$value": "2rem"
+      },
+      "body-line-height": {
+        "$type": "color",
+        "$value": "1.5rem"
+      },
+      "size-1": {
+        "$type": "color",
+        "$value": "2rem"
+      },
+      "size-2": {
+        "$type": "color",
+        "$value": "1.75rem"
+      },
+      "size-3": {
+        "$type": "color",
+        "$value": "1.25rem"
+      },
+      "size-4": {
+        "$type": "color",
+        "$value": "1.125rem"
+      },
+      "size-5": {
+        "$type": "color",
+        "$value": "0.875rem"
+      },
+      "size-6": {
+        "$type": "color",
+        "$value": "0.875rem"
+      },
+      "size-7": {
+        "$type": "color",
+        "$value": "0.875rem"
+      },
+      "link-hover": {
+        "$type": "color",
+        "$value": "$ben-franklin-blue-dark"
+      },
+      "tablet": {
+        "$type": "color",
+        "$value": "768px !default"
+      }
+    }
+  }
 }
