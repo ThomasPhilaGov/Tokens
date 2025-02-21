@@ -9,6 +9,7 @@ PhilaUI button styles, overwrites and appends to Bulma button styles
 
   // Use !optional to avoid errors if the selector is not found
   @extend .is-outlined !optional;
+  @extend .is-primary !optional;
 }
 
 .button,
