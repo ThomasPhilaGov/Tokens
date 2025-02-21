@@ -8,7 +8,8 @@ on:
     paths:
       - 'colors.tokens.json'
       - 'config.json'
-      - 'css-imports/variables.scss'
+      - 'css-imports/variables.scss'  # Update this to the correct path
+      - 'css-imports/**'  # Ensure changes in imported files also trigger the workflow
 
 permissions:
   contents: write
@@ -33,7 +34,7 @@ jobs:
         run: npm install scss-to-json --save-dev
 
       - name: Convert SCSS to JSON
-        run: npx scss-to-json variables.scss --output build/variables.json
+        run: npx scss-to-json css-imports/variables.scss --output build/variables.json  # Update this to the correct path
 
       - name: Post-process JSON
         run: node post-process-json.js
