@@ -8,7 +8,7 @@ on:
     paths:
       - 'colors.tokens.json'
       - 'config.json'
-      - 'colors.scss'
+      - 'css-imports/variables.scss'
 
 permissions:
   contents: write
@@ -29,51 +29,22 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Style Dictionary
-        run: npx style-dictionary build
+      - name: Install scss-to-json
+        run: npm install scss-to-json --save-dev
 
-      - name: Commit and push changes
+      - name: Convert SCSS to JSON
+        run: npx scss-to-json variables.scss --output build/variables.json
+
+      - name: Post-process JSON
+        run: node post-process-json.js
+
+      - name: Commit and push JSON changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
+          git add build/variables.json
           if git diff-index --quiet HEAD; then
             echo "No changes to commit"
           else
-            git commit -m "Update CSS variables"
+            git commit -m "Convert SCSS to JSON"
             git push
-          fi
-
-  css_to_json:
-    runs-on: ubuntu-latest
-    needs: build  # Ensure this job runs after the build job
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Create build directory
-        run: mkdir -p build
-
-      - name: Convert SCSS to CSS and JSON
-        run: node css-to-json.js colors.scss build/variables.css build/variables.json
-
-      - name: Commit and push CSS and JSON changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add build/variables.css build/variables.json
-          if git diff-index --quiet HEAD; then
-            echo "No changes to commit"
-          else
-            git commit -m "Convert SCSS to CSS and JSON"
-            git push
-          fi
