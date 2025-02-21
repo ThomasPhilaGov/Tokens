@@ -30,11 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install sass
-        run: npm install sass-embedded --save-dev
 
       - name: Convert SCSS to JSON
-        run: npx scss-to-json css-imports/variables.scss --output build/variables.json
+        run: node scss-to-json.js css-imports/variables.scss build/variables.json
 
       - name: Post-process JSON
         run: node post-process-json.js
