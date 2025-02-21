@@ -33,7 +33,8 @@ jobs:
       - name: Install sass
         run: npm install sass --save-dev
 
-
+      - name: Convert SCSS to JSON
+        run: node scss-to-json.js css-imports/variables.scss build/variables.json
 
       - name: Post-process JSON
         run: node post-process-json.js
@@ -48,3 +49,4 @@ jobs:
           else
             git commit -m "Convert SCSS to JSON"
             git push
+          fi  # Add this missing fi
