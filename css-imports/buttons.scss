@@ -3,15 +3,6 @@ Buttons Styles
 PhilaUI button styles, overwrites and appends to Bulma button styles
 */
 
-// Example update to css-imports/buttons.scss
-.button {
-  // Other styles...
-
-  // Use !optional to avoid errors if the selector is not found
-  @extend .is-outlined !optional;
-  @extend .is-primary !optional;
-}
-
 .button,
 .button.is-medium,
 .button.is-default {
