@@ -63,17 +63,17 @@ jobs:
       - name: Create build directory
         run: mkdir -p build
 
-      - name: Convert SCSS to JSON
-        run: node css-to-json.js colors.scss build/variables.json
+      - name: Convert SCSS to CSS and JSON
+        run: node css-to-json.js colors.scss build/variables.css build/variables.json
 
-      - name: Commit and push JSON changes
+      - name: Commit and push CSS and JSON changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add build/variables.json
+          git add build/variables.css build/variables.json
           if git diff-index --quiet HEAD; then
             echo "No changes to commit"
           else
-            git commit -m "Convert SCSS to JSON"
+            git commit -m "Convert SCSS to CSS and JSON"
             git push
           fi

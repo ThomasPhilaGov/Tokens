@@ -2,11 +2,15 @@ const fs = require('fs');
 const { renderSync } = require('sass');
 
 const inputFilePath = process.argv[2];
-const outputFilePath = process.argv[3];
+const cssOutputFilePath = process.argv[3];
+const jsonOutputFilePath = process.argv[4];
 
 // Compile SCSS to CSS
 const result = renderSync({ file: inputFilePath });
 const cssContent = result.css.toString();
+
+// Save the compiled CSS to a file
+fs.writeFileSync(cssOutputFilePath, cssContent);
 
 // Extract SCSS variables
 const variableRegex = /^\$([a-zA-Z0-9-_]+):\s*(.+);$/gm;
@@ -41,4 +45,4 @@ Object.keys(variables).forEach(variableName => {
 });
 
 // Write JSON output to file
-fs.writeFileSync(outputFilePath, JSON.stringify(jsonOutput, null, 2));
+fs.writeFileSync(jsonOutputFilePath, JSON.stringify(jsonOutput, null, 2));
