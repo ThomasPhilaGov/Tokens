@@ -1,21 +1,4 @@
 {
   "global": {},
-  "Colors/Mode 1": {
-    "grey-light": {
-      "$type": "color",
-      "$value": "$sidewalk-grey"
-    },
-    "gray-light": {
-      "$type": "color",
-      "$value": "$sidewalk-gray"
-    },
-    "dark": {
-      "$type": "color",
-      "$value": "$grey-dark"
-    },
-    "dark-invert": {
-      "$type": "color",
-      "$value": "$white"
-    }
-  }
+  "Colors/Mode 1": {}
 }
