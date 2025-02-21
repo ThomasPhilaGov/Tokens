@@ -8,8 +8,8 @@ on:
     paths:
       - 'colors.tokens.json'
       - 'config.json'
-      - 'css-imports/variables.scss'  # Update this to the correct path
-      - 'css-imports/**'  # Ensure changes in imported files also trigger the workflow
+      - 'css-imports/variables.scss'
+      - 'css-imports/**'
 
 permissions:
   contents: write
@@ -21,6 +21,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Install Python 2
+        run: sudo apt-get install python2
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -34,7 +37,7 @@ jobs:
         run: npm install scss-to-json --save-dev
 
       - name: Convert SCSS to JSON
-        run: npx scss-to-json css-imports/variables.scss --output build/variables.json  # Update this to the correct path
+        run: npx scss-to-json css-imports/variables.scss --output build/variables.json
 
       - name: Post-process JSON
         run: node post-process-json.js
