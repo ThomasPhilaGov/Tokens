@@ -4,11 +4,11 @@
     "global": {},
     "Colors/Mode 1": {
       "family-sans-serif": {
-        "$type": "color",
+        "$type": "font",
         "$value": "'Open Sans', BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif"
       },
       "family-secondary": {
-        "$type": "color",
+        "$type": "font",
         "$value": "Montserrat, BlinkMacSystemFont, -apple-system, \"Segoe UI\", \"Roboto\", \"Oxygen\", \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", \"Helvetica\", \"Arial\", sans-serif"
       },
       "radius": {
@@ -20,19 +20,19 @@
         "$value": "0"
       },
       "notification-padding": {
-        "$type": "color",
+        "$type": "spacing",
         "$value": "1rem 2.5rem 1rem 1rem"
       },
       "navbar-item-img-max-height": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "75px"
       },
       "navbar-padding-vertical": {
-        "$type": "color",
+        "$type": "spacing",
         "$value": "0.5rem"
       },
       "navbar-padding-horizontal": {
-        "$type": "color",
+        "$type": "spacing",
         "$value": "1rem"
       },
       "navbar-background-color": {
@@ -68,7 +68,7 @@
         "$value": "$ben-franklin-blue-dark"
       },
       "footer-padding": {
-        "$type": "color",
+        "$type": "spacing",
         "$value": "rem-calc(10px)"
       },
       "footer-color": {
@@ -80,7 +80,7 @@
         "$value": "$ghost-grey"
       },
       "input-focus-box-shadow-size": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "none"
       },
       "input-border-color": {
@@ -112,19 +112,19 @@
         "$value": "$ghost-grey"
       },
       "modal-content-width": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "760px"
       },
       "modal-card-head-padding": {
-        "$type": "color",
+        "$type": "spacing",
         "$value": "15px"
       },
       "modal-card-body-padding": {
-        "$type": "color",
+        "$type": "spacing",
         "$value": "15px"
       },
       "title-line-height": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "1.4"
       },
       "body-background-color": {
@@ -132,11 +132,11 @@
         "$value": "$white"
       },
       "body-size": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "16px"
       },
       "body-min-width": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "300px"
       },
       "body-rendering": {
@@ -148,67 +148,67 @@
         "$value": "400"
       },
       "button-padding-vertical": {
-        "$type": "color",
+        "$type": "spacing",
         "$value": "0.75rem"
       },
       "button-padding-horizontal": {
-        "$type": "color",
+        "$type": "spacing",
         "$value": "1.5rem"
       },
       "size-small": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "0.875rem"
       },
       "size-medium": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "1rem"
       },
       "size-normal": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "1rem"
       },
       "size-large": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "1.125rem"
       },
       "line-height-medium": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "1.5rem"
       },
       "line-height-large": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "2rem"
       },
       "body-line-height": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "1.5rem"
       },
       "size-1": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "2rem"
       },
       "size-2": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "1.75rem"
       },
       "size-3": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "1.25rem"
       },
       "size-4": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "1.125rem"
       },
       "size-5": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "0.875rem"
       },
       "size-6": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "0.875rem"
       },
       "size-7": {
-        "$type": "color",
+        "$type": "dimension",
         "$value": "0.875rem"
       },
       "link-hover": {
