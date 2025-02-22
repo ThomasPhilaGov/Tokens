@@ -34,8 +34,19 @@ const jsonOutput = {
 };
 
 Object.keys(variables).forEach(variableName => {
+  let variableType = "color"; // Default type is color
+
+  // Determine the type based on the variable name or value
+  if (variableName.includes('font') || variableName.includes('family')) {
+    variableType = "font";
+  } else if (variableName.includes('size') || variableName.includes('width') || variableName.includes('height')) {
+    variableType = "dimension";
+  } else if (variableName.includes('padding') || variableName.includes('margin')) {
+    variableType = "spacing";
+  }
+
   jsonOutput["Colors/Mode 1"][variableName] = {
-    "$type": "color",
+    "$type": variableType,
     "$value": variables[variableName]
   };
 });
