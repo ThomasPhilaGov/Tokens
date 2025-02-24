@@ -39,12 +39,15 @@ jobs:
       - name: Post-process JSON
         run: node post-process-json.js
 
-      - name: Commit and push JSON changes
+        - name: Commit and push JSON changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add build/resolved-tokens.json package-lock.json package.json
-          if git diff-index --quiet HEAD; then
+          git add build/variables.json || echo "No changes to add"
+          git add build/resolved-tokens.json || echo "No changes to add"
+          git add package-lock.json package.json || echo "No package changes to add"
+          
+          if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             git commit -m "Convert SCSS to JSON"
