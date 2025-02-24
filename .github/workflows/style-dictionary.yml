@@ -30,11 +30,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install sass
-        run: npm install sass --save-dev
+      - name: Install `sass-export`
+        run: npm install -g sass-export
 
       - name: Convert SCSS to JSON
-        run: node scss-to-json.js css-imports/variables.scss build/variables.json
+        run: sass-export --file css-imports/colors.scss --json build/resolved-tokens.json
 
       - name: Post-process JSON
         run: node post-process-json.js
@@ -43,7 +43,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add build/variables.json package-lock.json package.json
+          git add build/resolved-tokens.json package-lock.json package.json
           if git diff-index --quiet HEAD; then
             echo "No changes to commit"
           else
