@@ -30,16 +30,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install `sass-export`
-        run: npm install -g sass-export
+      - name: Install sass
+        run: npm install sass --save-dev
 
       - name: Convert SCSS to JSON
-        run: sass-export --file css-imports/colors.scss --json build/resolved-tokens.json
+        run: node scss-to-json.js css-imports/variables.scss build/variables.json
 
       - name: Post-process JSON
         run: node post-process-json.js
 
-        - name: Commit and push JSON changes
+      - name: Commit and push JSON changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
