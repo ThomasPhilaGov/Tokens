@@ -1,15 +1,21 @@
 {
     "source": ["colors.tokens.json"],
     "platforms": {
-        "css": {
-            "trasnformGroup": "css",
-            "buildPath": "build/",
-            "files": [
-                {
-                    "destination": "variables.css",
-                    "format": "css/variables"
-                }
-            ]
-        }
+      "css": {
+        "transformGroup": "css",
+        "buildPath": "build/",
+        "files": [{
+          "destination": "variables.css",
+          "format": "css/variables"
+        }]
+      },
+      "storybook": {
+        "transformGroup": "js",
+        "buildPath": "storybook/",
+        "files": [{
+          "destination": "designTokens.js",
+          "format": "javascript/es6"
+        }]
+      }
     }
-}
+  }
