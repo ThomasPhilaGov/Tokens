@@ -2,7 +2,7 @@
     "source": ["colors.tokens.json"],
     "platforms": {
         "css": {
-            "trasnformGroup": "css",
+            "transformGroup": "css",
             "buildPath": "build/",
             "files": [
                 {
