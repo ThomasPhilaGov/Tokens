@@ -1,0 +1,33 @@
+{
+  "Colors/Mode 1": {
+    "dark-ben-franklin-blue": "#0f4d90",
+    "ben-franklin-blue": "#2176d2",
+    "dark-gray": "#444444",
+    "light-ben-franklin": "#96c9ff",
+    "electric-blue": "#25cef7",
+    "bell-yellow": "#f3c613",
+    "flyers-orange": "#f99300",
+    "kelly-drive-green": "#58c04d",
+    "light-bell": "#ffefa2",
+    "light-red": "#fed0d0",
+    "light-kelly-drive": "#b9f2b1",
+    "light-blue": "#daedfe",
+    "phanatic-green": "#3a833c",
+    "love-park-red": "#cc3000",
+    "pride-purple": "#9400c6",
+    "black": "#000000",
+    "medium-gray": "#a1a1a1",
+    "sidewalk": "#cfcfcf",
+    "ghost-gray": "#f0f0f0",
+    "white": "#ffffff",
+    "light-bell-bg": "#fff7d0",
+    "light-kelly-drive-bg": "#dcf8d8",
+    "light-red-bg": "#fee7e7"
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "Colors/Mode 1"
+    ]
+  }
+}

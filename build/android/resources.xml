@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly, this file was auto-generated.
+-->
+<resources>
+  <color name="colors_mode_1_dark_ben_franklin_blue">#ff0f4d90</color>
+  <color name="colors_mode_1_ben_franklin_blue">#ff2176d2</color>
+  <color name="colors_mode_1_dark_gray">#ff444444</color>
+  <color name="colors_mode_1_light_ben_franklin">#ff96c9ff</color>
+  <color name="colors_mode_1_electric_blue">#ff25cef7</color>
+  <color name="colors_mode_1_bell_yellow">#fff3c613</color>
+  <color name="colors_mode_1_flyers_orange">#fff99300</color>
+  <color name="colors_mode_1_kelly_drive_green">#ff58c04d</color>
+  <color name="colors_mode_1_light_bell">#ffffefa2</color>
+  <color name="colors_mode_1_light_red">#fffed0d0</color>
+  <color name="colors_mode_1_light_kelly_drive">#ffb9f2b1</color>
+  <color name="colors_mode_1_light_blue">#ffdaedfe</color>
+  <color name="colors_mode_1_phanatic_green">#ff3a833c</color>
+  <color name="colors_mode_1_love_park_red">#ffcc3000</color>
+  <color name="colors_mode_1_pride_purple">#ff9400c6</color>
+  <color name="colors_mode_1_black">#ff000000</color>
+  <color name="colors_mode_1_medium_gray">#ffa1a1a1</color>
+  <color name="colors_mode_1_sidewalk">#ffcfcfcf</color>
+  <color name="colors_mode_1_ghost_gray">#fff0f0f0</color>
+  <color name="colors_mode_1_white">#ffffffff</color>
+  <color name="colors_mode_1_light_bell_bg">#fffff7d0</color>
+  <color name="colors_mode_1_light_kelly_drive_bg">#ffdcf8d8</color>
+  <color name="colors_mode_1_light_red_bg">#fffee7e7</color>
+</resources>
