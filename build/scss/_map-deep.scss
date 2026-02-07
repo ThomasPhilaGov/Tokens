@@ -1,0 +1,64 @@
+
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+$colors-mode-1-dark-ben-franklin-blue: #0f4d90 !default; // Primary CTA Color
+$colors-mode-1-ben-franklin-blue: #2176d2 !default; // Primary color
+$colors-mode-1-dark-gray: #444444 !default; // Greyscale Color
+$colors-mode-1-light-ben-franklin: #96c9ff !default; // Primary Light Color
+$colors-mode-1-electric-blue: #25cef7 !default;
+$colors-mode-1-bell-yellow: #f3c613 !default; // Warning Color
+$colors-mode-1-flyers-orange: #f99300 !default;
+$colors-mode-1-kelly-drive-green: #58c04d !default;
+$colors-mode-1-light-bell: #ffefa2 !default;
+$colors-mode-1-light-red: #fed0d0 !default;
+$colors-mode-1-light-kelly-drive: #b9f2b1 !default;
+$colors-mode-1-light-blue: #daedfe !default; // Alert Background Color
+$colors-mode-1-phanatic-green: #3a833c !default; // Success color
+$colors-mode-1-love-park-red: #cc3000 !default; // Danger Color
+$colors-mode-1-pride-purple: #9400c6 !default;
+$colors-mode-1-black: #000000 !default;
+$colors-mode-1-medium-gray: #a1a1a1 !default; // Greyscale Color
+$colors-mode-1-sidewalk: #cfcfcf !default; // Greyscale Color
+$colors-mode-1-ghost-gray: #f0f0f0 !default; // Greyscale Color
+$colors-mode-1-white: #ffffff !default; // Invert Color
+$colors-mode-1-light-bell-bg: #fff7d0 !default; // Alert Background Color
+$colors-mode-1-light-kelly-drive-bg: #dcf8d8 !default; // Alert Background Color
+$colors-mode-1-light-red-bg: #fee7e7 !default; // Alert Background Color
+
+$tokens: (
+  'Colors/Mode 1': (
+    'dark-ben-franklin-blue': $colors-mode-1-dark-ben-franklin-blue,
+    'ben-franklin-blue': $colors-mode-1-ben-franklin-blue,
+    'dark-gray': $colors-mode-1-dark-gray,
+    'light-ben-franklin': $colors-mode-1-light-ben-franklin,
+    'electric-blue': $colors-mode-1-electric-blue,
+    'bell-yellow': $colors-mode-1-bell-yellow,
+    'flyers-orange': $colors-mode-1-flyers-orange,
+    'kelly-drive-green': $colors-mode-1-kelly-drive-green,
+    'light-bell': $colors-mode-1-light-bell,
+    'light-red': $colors-mode-1-light-red,
+    'light-kelly-drive': $colors-mode-1-light-kelly-drive,
+    'light-blue': $colors-mode-1-light-blue,
+    'phanatic-green': $colors-mode-1-phanatic-green,
+    'love-park-red': $colors-mode-1-love-park-red,
+    'pride-purple': $colors-mode-1-pride-purple,
+    'black': $colors-mode-1-black,
+    'medium-gray': $colors-mode-1-medium-gray,
+    'sidewalk': $colors-mode-1-sidewalk,
+    'ghost-gray': $colors-mode-1-ghost-gray,
+    'white': $colors-mode-1-white,
+    'light-bell-bg': $colors-mode-1-light-bell-bg,
+    'light-kelly-drive-bg': $colors-mode-1-light-kelly-drive-bg,
+    'light-red-bg': $colors-mode-1-light-red-bg
+  ),
+  '$themes': (
+
+  ),
+  '$metadata': (
+    'tokenSetOrder': (
+      '0': 'Colors/Mode 1'
+    )
+  )
+);
