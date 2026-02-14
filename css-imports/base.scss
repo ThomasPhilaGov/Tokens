@@ -1,0 +1,53 @@
+/*
+Base styles
+These are overall styles for a phila-ui project
+*/
+
+@import "mixins";
+
+html {
+  overflow: initial;
+}
+
+main {
+  padding: 2rem 0;
+  display: block;
+}
+
+.container {
+  @media screen and (max-width: 1024px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media screen and (max-width: 500px) {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+a {
+  transition: all 0.25s ease;
+  &.is-link {
+    @include link;
+  }
+  &.is-link.is-small {
+    @include small-link;
+  }
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+
+.is-justified-center {
+  justify-content: center !important;
+}
+.is-justified-start {
+  justify-content: flex-start !important;
+}
+.is-justified-end {
+  justify-content: flex-end !important;
+}
+.is-justified-space-between {
+  justify-content: space-between !important;
+}

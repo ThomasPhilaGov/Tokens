@@ -1,29 +1,1260 @@
-/**
- * Do not edit directly, this file was auto-generated.
- */
+/*
+All styles imported here
+With exception of deprecated styles
+*/
+/*Variables, mixins and other helpers*/
+/* Test Variables 
+Testing against the variables.scss file
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
 
-:root {
-  --dark-ben-franklin-blue: #0f4d90; /* Primary CTA Color */
-  --ben-franklin-blue: #2176d2; /* Primary color */
-  --dark-gray: #444444; /* Greyscale Color */
-  --light-ben-franklin: #96c9ff; /* Primary Light Color */
-  --electric-blue: #25cef7;
-  --bell-yellow: #f3c613; /* Warning Color */
-  --flyers-orange: #f99300;
-  --kelly-drive-green: #58c04d;
-  --light-bell: #ffefa2;
-  --light-red: #fed0d0;
-  --light-kelly-drive: #b9f2b1;
-  --light-blue: #daedfe; /* Alert Background Color */
-  --phanatic-green: #3a833c; /* Success color */
-  --love-park-red: #cc3000; /* Danger Color */
-  --pride-purple: #9400c6;
-  --black: #000000;
-  --medium-gray: #a1a1a1; /* Greyscale Color */
-  --sidewalk: #cfcfcf; /* Greyscale Color */
-  --ghost-gray: #f0f0f0; /* Greyscale Color */
-  --white: #ffffff; /* Invert Color */
-  --light-bell-bg: #fff7d0; /* Alert Background Color */
-  --light-kelly-drive-bg: #dcf8d8; /* Alert Background Color */
-  --light-red-bg: #fee7e7; /* Alert Background Color */
+*/
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("https://www.phila.gov/assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("https://www.phila.gov/assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-Italic.woff2") format("woff2"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-BoldItalic.woff2") format("woff2"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("https://www.phila.gov/assets/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("https://www.phila.gov/assets/fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans SemiBold Italic"), local("OpenSans-SemiBoldItalic"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-SemiBoldItalic.woff2") format("woff2"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("https://www.phila.gov/assets/fonts/OpenSans/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*The bulma library*/
+/*@import "css-imports/bulma/bulma.sass";
+
+/*The bulma checkradio plugin*/
+/*@import "css-imports/bulma-checkradio/src/sass/index.sass";
+
+/*Overall project styles*/
+/*
+Base styles
+These are overall styles for a phila-ui project
+*/
+html {
+  overflow: initial;
+}
+
+main {
+  padding: 2rem 0;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+a {
+  transition: all 0.25s ease;
+}
+a.is-link {
+  color: hsl(211.2, 81.1%, 31.2%);
+  text-decoration: underline;
+  font-weight: 700;
+}
+a.is-link.external-link, a.is-link.is-external-link {
+  display: inline-block;
+}
+a.is-link.external-link:after, a.is-link.is-external-link:after {
+  content: "\f35d";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  display: inline-block;
+  font-size: 0.875rem;
+  margin-left: 0.25rem;
+}
+a.is-link.is-inverted {
+  color: hsl(255, 100%, 100%);
+}
+a.is-link.is-small {
+  font-size: 0.875rem;
+}
+a.is-link.is-small.external-link:after, a.is-link.is-small.is-external-link:after {
+  font-size: 0.7rem;
+}
+
+.is-fullwidth {
+  width: 100%;
+}
+
+.is-justified-center {
+  justify-content: center !important;
+}
+
+.is-justified-start {
+  justify-content: flex-start !important;
+}
+
+.is-justified-end {
+  justify-content: flex-end !important;
+}
+
+.is-justified-space-between {
+  justify-content: space-between !important;
+}
+
+/*Styles for form inputs components*/
+/*
+Shared input styles
+Used by all input components
+*/
+input::-webkit-input-placeholder {
+  color: hsl(0, 0%, 63.1%) !important;
+  opacity: 1 !important;
+}
+
+input::-moz-placeholder {
+  color: hsl(0, 0%, 63.1%) !important;
+  opacity: 1 !important;
+}
+
+/* FF 4-18 */
+input:-moz-placeholder {
+  color: hsl(0, 0%, 63.1%) !important;
+  opacity: 1 !important;
+}
+
+/* FF 19+ */
+input:-ms-input-placeholder {
+  color: hsl(0, 0%, 63.1%) !important;
+  opacity: 1 !important;
+}
+
+input::placeholder {
+  color: hsl(0, 0%, 63.1%) !important;
+  opacity: 1 !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.is-field-info, .is-field-info-important {
+  margin: 0 0.5rem;
+  font-size: 0.875rem;
+  padding: 0 0 0.5rem 0;
+}
+.is-field-info + .has-error, .is-field-info-important + .has-error {
+  margin-top: 0.15rem;
+}
+
+.is-field-info-important {
+  background-color: hsl(208.3, 94.7%, 92.5%);
+  padding: 1rem;
+}
+
+form .form-padding {
+  padding: 0 0.5rem;
+}
+form fieldset legend {
+  font-size: 0.875rem;
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+form .field {
+  margin-bottom: 0 !important;
+}
+form .form-submit {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.input-wrap {
+  padding: 0.5rem 0.5rem 0.5rem;
+  position: relative;
+}
+.input-wrap label {
+  font-size: 0.875rem;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.input-wrap .is-field-info, .input-wrap .is-field-info-important {
+  margin: 0;
+}
+.input-wrap.required.input-textbox label:after, .input-wrap.required.input-textarea label:after, .input-wrap.required.input-dropdown label:after {
+  content: "*";
+  font-size: 0.875rem;
+}
+.input-wrap.has-error {
+  background-color: hsl(0, 92%, 95.1%);
+  margin-bottom: 2px;
+}
+.input-wrap.has-error .select select,
+.input-wrap.has-error .input,
+.input-wrap.has-error .textarea {
+  border: 2px solid hsl(12.9, 100%, 32.9%) !important;
+}
+.input-wrap.has-error .select select:focus,
+.input-wrap.has-error .input:focus,
+.input-wrap.has-error .textarea:focus {
+  border: 2px solid hsl(12.9, 100%, 32.9%) !important;
+}
+.input-wrap.has-error .input-error-msg {
+  font-size: 0.9rem;
+  color: hsl(12.9, 100%, 32.9%);
+  font-weight: 600;
+  line-height: 1.2;
+  position: relative;
+  margin-top: 0.4rem;
+}
+.input-wrap.has-error .input-error-msg .icon {
+  font-size: 1rem;
+  width: 1rem;
+  position: absolute;
+  top: -3px;
+  left: 1px;
+}
+.input-wrap.has-error .input-error-msg span:last-child {
+  left: 1.3rem;
+  padding-right: 1.3rem;
+  position: relative;
+  display: inline-block;
+}
+.input-wrap.has-error.input-textbox label, .input-wrap.has-error.input-textarea label, .input-wrap.has-error.input-dropdown label {
+  color: hsl(12.9, 100%, 32.9%);
+}
+.input-wrap.has-error.input-checkbox legend, .input-wrap.has-error.input-radio legend {
+  color: hsl(12.9, 100%, 32.9%);
+}
+.input-wrap.inner-label {
+  /* FF 4-18 */
+  /* FF 19+ */
+}
+.input-wrap.inner-label.input-textbox .control, .input-wrap.inner-label.input-dropdown .control, .input-wrap.inner-label.input-textarea .control {
+  overflow: hidden;
+}
+.input-wrap.inner-label.input-textbox label, .input-wrap.inner-label.input-dropdown label, .input-wrap.inner-label.input-textarea label {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  z-index: 5;
+  padding: 0 0 0 0.9rem;
+  white-space: nowrap;
+}
+.input-wrap.inner-label input::-webkit-input-placeholder {
+  color: hsl(0, 0%, 26.7%) !important;
+  opacity: 1 !important;
+}
+.input-wrap.inner-label input::-moz-placeholder {
+  color: hsl(0, 0%, 26.7%) !important;
+  opacity: 1 !important;
+}
+.input-wrap.inner-label input:-moz-placeholder {
+  color: hsl(0, 0%, 26.7%) !important;
+  opacity: 1 !important;
+}
+.input-wrap.inner-label input:-ms-input-placeholder {
+  color: hsl(0, 0%, 26.7%) !important;
+  opacity: 1 !important;
+}
+.input-wrap.inner-label input::placeholder {
+  color: hsl(0, 0%, 26.7%) !important;
+  opacity: 1 !important;
+}
+.input-wrap .input,
+.input-wrap .textarea,
+.input-wrap .select select {
+  border-bottom: 1px solid #979797;
+  font-size: 1.063rem;
+}
+.input-wrap .input:focus,
+.input-wrap .textarea:focus,
+.input-wrap .select select:focus {
+  background-color: hsl(255, 100%, 100%);
+  border: 2px solid hsl(191.7, 92.9%, 55.7%) !important;
+}
+.input-wrap.input-checkbox .control, .input-wrap.input-radio .control {
+  margin-bottom: 0.5rem;
+}
+.input-wrap.input-checkbox label, .input-wrap.input-radio label {
+  top: 0;
+  left: 0;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  font-weight: 400;
+}
+.input-wrap.input-checkbox fieldset legend, .input-wrap.input-radio fieldset legend {
+  padding: 0 0 0.1rem 0;
+}
+.input-wrap.input-checkbox.small-checkradio .control, .input-wrap.input-radio.small-checkradio .control {
+  margin-bottom: 0.1rem;
+}
+.input-wrap.input-checkbox.small-checkradio .is-checkradio[type=checkbox] + label, .input-wrap.input-radio.small-checkradio .is-checkradio[type=checkbox] + label {
+  margin-left: 1.5rem;
+  font-size: 0.875rem;
+}
+.input-wrap.input-checkbox.small-checkradio .is-checkradio[type=checkbox] + label:before, .input-wrap.input-radio.small-checkradio .is-checkradio[type=checkbox] + label:before {
+  width: 1.125rem;
+  height: 1.125rem;
+  left: -1.5rem !important;
+  top: 0.18rem;
+}
+.input-wrap.input-checkbox.small-checkradio .is-checkradio[type=checkbox] + label:after, .input-wrap.input-radio.small-checkradio .is-checkradio[type=checkbox] + label:after {
+  top: 0.3rem;
+  left: -1.1rem !important;
+}
+.input-wrap.input-checkbox.small-checkradio .is-checkradio[type=radio] + label, .input-wrap.input-radio.small-checkradio .is-checkradio[type=radio] + label {
+  margin-left: 1.5rem !important;
+  font-size: 0.875rem;
+}
+.input-wrap.input-checkbox.small-checkradio .is-checkradio[type=radio] + label:before, .input-wrap.input-radio.small-checkradio .is-checkradio[type=radio] + label:before {
+  width: 1.125rem;
+  height: 1.125rem;
+  left: -1.5rem !important;
+  top: 0.18rem;
+}
+.input-wrap.input-checkbox.small-checkradio .is-checkradio[type=radio] + label:after, .input-wrap.input-radio.small-checkradio .is-checkradio[type=radio] + label:after {
+  transform: scale(0.3);
+  top: 0rem;
+  left: -1.7rem !important;
+}
+.input-wrap.input-checkbox.required fieldset legend:after, .input-wrap.input-radio.required fieldset legend:after {
+  content: "*";
+  font-size: 0.875rem;
+}
+.input-wrap.input-checkbox .is-checkradio[type=checkbox]:checked + label:before, .input-wrap.input-radio .is-checkradio[type=checkbox]:checked + label:before {
+  border-color: transparent !important;
+  background-color: hsl(211.2, 72.8%, 47.6%);
+}
+.input-wrap.input-checkbox .is-checkradio[type=checkbox]:checked + label:after, .input-wrap.input-radio .is-checkradio[type=checkbox]:checked + label:after {
+  font-weight: 600;
+  border-color: hsl(255, 100%, 100%) !important;
+}
+.input-wrap.input-checkbox .is-checkradio[type=radio]:checked + label:before, .input-wrap.input-radio .is-checkradio[type=radio]:checked + label:before {
+  border-color: transparent !important;
+  background-color: hsl(211.2, 72.8%, 47.6%);
+}
+.input-wrap.input-checkbox .is-checkradio[type=radio]:checked + label:after, .input-wrap.input-radio .is-checkradio[type=radio]:checked + label:after {
+  background-color: hsl(255, 100%, 100%);
+}
+.input-wrap.input-checkbox .is-checkradio + label:before, .input-wrap.input-radio .is-checkradio + label:before {
+  border: 0.09rem solid #a1a1a1 !important;
+  left: -2rem !important;
+}
+.input-wrap.input-checkbox .is-checkradio[type=checkbox] + label:after, .input-wrap.input-radio .is-checkradio[type=checkbox] + label:after {
+  top: 0.3rem;
+  left: -1.4rem !important;
+}
+.input-wrap.input-checkbox .is-checkradio[type=radio] + label:after, .input-wrap.input-radio .is-checkradio[type=radio] + label:after {
+  left: -2rem !important;
+}
+.input-wrap.input-checkbox .is-checkradio + label, .input-wrap.input-radio .is-checkradio + label {
+  display: inline-block;
+  font-size: 1.063rem;
+  margin: 0 0 0 2rem;
+  padding: 0;
+}
+.input-wrap.input-checkbox .is-checkradio + label:hover:before, .input-wrap.input-radio .is-checkradio + label:hover:before {
+  border-color: hsl(211.2, 72.8%, 47.6%) !important;
+}
+.input-wrap .supplemental-text {
+  font-size: 0.875rem;
+  padding: 0.2rem 0.75rem 0 0.8rem;
+  line-height: 1rem;
+}
+
+.field .control.is-loading span.icon {
+  opacity: 0 !important;
+}
+.field .control.has-icons-right span.input-icon.is-right,
+.field .control.has-icons-right span.input-icon.is-left, .field .control.has-icons-left span.input-icon.is-right,
+.field .control.has-icons-left span.input-icon.is-left {
+  height: 3.5rem;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 63.1%);
+}
+.field .control.has-icons-right .select label, .field .control.has-icons-left .select label {
+  padding-left: 2.85rem;
+}
+.field .control.has-icons-right .select select, .field .control.has-icons-left .select select {
+  padding-left: 2.5rem;
+}
+
+/*Styles for buttons*/
+/*
+Buttons Styles
+PhilaUI button styles, overwrites and appends to Bulma button styles
+*/
+.button,
+.button.is-medium,
+.button.is-default {
+  border-width: 0.125rem;
+  border-color: transparent;
+  padding: calc(0.75rem - 0.125rem) calc(1rem - 0.125rem);
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  text-transform: uppercase !important;
+  border-radius: 0 !important;
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+  font-weight: 600 !important;
+  height: auto !important;
+  text-decoration: none !important;
+}
+.button span.icon,
+.button.is-medium span.icon,
+.button.is-default span.icon {
+  height: auto;
+  width: auto;
+  font-size: 1.125rem;
+}
+.button span.icon:first-child:not(:last-child),
+.button.is-medium span.icon:first-child:not(:last-child),
+.button.is-default span.icon:first-child:not(:last-child) {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+.button span.icon:first-child:not(:last-child) + span,
+.button.is-medium span.icon:first-child:not(:last-child) + span,
+.button.is-default span.icon:first-child:not(:last-child) + span {
+  padding-right: 1rem;
+}
+.button span.icon:last-child:not(:first-child),
+.button.is-medium span.icon:last-child:not(:first-child),
+.button.is-default span.icon:last-child:not(:first-child) {
+  margin: 0;
+  padding: 0;
+}
+.button span:first-child:not([class=icon]),
+.button.is-medium span:first-child:not([class=icon]),
+.button.is-default span:first-child:not([class=icon]) {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1rem !important;
+}
+.button span:first-child:not([class=icon]) + span,
+.button.is-medium span:first-child:not([class=icon]) + span,
+.button.is-default span:first-child:not([class=icon]) + span {
+  margin-left: 1rem !important;
+}
+.button.is-small,
+.button.is-medium.is-small,
+.button.is-default.is-small {
+  padding: calc(0.5rem - 0.125rem) calc(1rem - 0.125rem);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.button.is-small span.icon,
+.button.is-medium.is-small span.icon,
+.button.is-default.is-small span.icon {
+  height: auto;
+  width: auto;
+  max-height: 1.125rem;
+  max-width: 1.125rem;
+}
+.button.is-small span.icon:first-child:not(:last-child),
+.button.is-medium.is-small span.icon:first-child:not(:last-child),
+.button.is-default.is-small span.icon:first-child:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.button.is-small span:first-child:not([class=icon]),
+.button.is-medium.is-small span:first-child:not([class=icon]),
+.button.is-default.is-small span:first-child:not([class=icon]) {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 1rem !important;
+}
+.button.is-small span:first-child:not([class=icon]) + span,
+.button.is-medium.is-small span:first-child:not([class=icon]) + span,
+.button.is-default.is-small span:first-child:not([class=icon]) + span {
+  margin-left: 0.5rem !important;
+}
+.button.is-large,
+.button.is-medium.is-large,
+.button.is-default.is-large {
+  padding: calc(1rem - 0.125rem) calc(2rem - 0.125rem);
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+.button.is-large span.icon,
+.button.is-medium.is-large span.icon,
+.button.is-default.is-large span.icon {
+  height: auto;
+  width: auto;
+  max-height: 1.125rem;
+  max-width: 1.125rem;
+}
+.button.is-large span.icon:first-child:not(:last-child),
+.button.is-medium.is-large span.icon:first-child:not(:last-child),
+.button.is-default.is-large span.icon:first-child:not(:last-child) {
+  margin-left: -1rem;
+  margin-right: 1rem;
+}
+.button.is-large span.icon:first-child:not(:last-child) + span,
+.button.is-medium.is-large span.icon:first-child:not(:last-child) + span,
+.button.is-default.is-large span.icon:first-child:not(:last-child) + span {
+  padding-right: 0;
+}
+.button.is-large span:first-child:not([class=icon]),
+.button.is-medium.is-large span:first-child:not([class=icon]),
+.button.is-default.is-large span:first-child:not([class=icon]) {
+  padding-left: 0 !important;
+}
+.button.is-large span:first-child:not([class=icon]) + span,
+.button.is-medium.is-large span:first-child:not([class=icon]) + span,
+.button.is-default.is-large span:first-child:not([class=icon]) + span {
+  margin-left: 1rem !important;
+  margin-right: -1rem !important;
+}
+.button:focus:not(:active),
+.button.is-medium:focus:not(:active),
+.button.is-default:focus:not(:active) {
+  box-shadow: 0 0 0 0.25em hsl(191.7, 92.9%, 55.7%) !important;
+}
+.button.is-primary:hover, .button.is-secondary:hover, .button.is-danger:hover, .button.is-cta:hover,
+.button.is-medium.is-primary:hover,
+.button.is-medium.is-secondary:hover,
+.button.is-medium.is-danger:hover,
+.button.is-medium.is-cta:hover,
+.button.is-default.is-primary:hover,
+.button.is-default.is-secondary:hover,
+.button.is-default.is-danger:hover,
+.button.is-default.is-cta:hover {
+  background-color: hsl(0, 0%, 26.7%);
+  border-color: hsl(0, 0%, 26.7%);
+  color: hsl(255, 100%, 100%);
+}
+.button.is-primary:active, .button.is-secondary:active, .button.is-danger:active, .button.is-cta:active,
+.button.is-medium.is-primary:active,
+.button.is-medium.is-secondary:active,
+.button.is-medium.is-danger:active,
+.button.is-medium.is-cta:active,
+.button.is-default.is-primary:active,
+.button.is-default.is-secondary:active,
+.button.is-default.is-danger:active,
+.button.is-default.is-cta:active {
+  background-color: hsl(0, 0%, 0%);
+  border-color: hsl(0, 0%, 0%);
+  color: hsl(255, 100%, 100%);
+}
+.button.is-primary:disabled, .button.is-secondary:disabled, .button.is-danger:disabled, .button.is-cta:disabled,
+.button.is-medium.is-primary:disabled,
+.button.is-medium.is-secondary:disabled,
+.button.is-medium.is-danger:disabled,
+.button.is-medium.is-cta:disabled,
+.button.is-default.is-primary:disabled,
+.button.is-default.is-secondary:disabled,
+.button.is-default.is-danger:disabled,
+.button.is-default.is-cta:disabled {
+  background-color: hsl(0, 0%, 81.2%);
+  border-color: hsl(0, 0%, 81.2%);
+  color: hsl(255, 100%, 100%);
+}
+.button.is-secondary,
+.button.is-medium.is-secondary,
+.button.is-default.is-secondary {
+  color: hsl(211.2, 72.8%, 47.6%);
+  border-color: hsl(211.2, 72.8%, 47.6%);
+}
+.button.is-secondary:focus:not(:active),
+.button.is-medium.is-secondary:focus:not(:active),
+.button.is-default.is-secondary:focus:not(:active) {
+  background-color: hsl(255, 100%, 100%);
+  color: hsl(211.2, 72.8%, 47.6%);
+  border-color: hsl(211.2, 72.8%, 47.6%);
+}
+.button.is-secondary:disabled,
+.button.is-medium.is-secondary:disabled,
+.button.is-default.is-secondary:disabled {
+  background-color: hsl(255, 100%, 100%) !important;
+  border-color: hsl(0, 0%, 81.2%) !important;
+  color: hsl(0, 0%, 81.2%) !important;
+  border-width: 0.125rem !important;
+}
+.button.is-tertiary,
+.button.is-medium.is-tertiary,
+.button.is-default.is-tertiary {
+  border-color: transparent;
+  color: hsl(211.2, 72.8%, 47.6%);
+}
+.button.is-tertiary:focus:not(:active),
+.button.is-medium.is-tertiary:focus:not(:active),
+.button.is-default.is-tertiary:focus:not(:active) {
+  background-color: hsl(255, 100%, 100%);
+  color: hsl(211.2, 72.8%, 47.6%);
+  border-color: transparent;
+}
+.button.is-tertiary:hover,
+.button.is-medium.is-tertiary:hover,
+.button.is-default.is-tertiary:hover {
+  background-color: hsl(0, 0%, 26.7%);
+  border-color: hsl(0, 0%, 26.7%);
+  color: hsl(255, 100%, 100%);
+}
+.button.is-tertiary:active,
+.button.is-medium.is-tertiary:active,
+.button.is-default.is-tertiary:active {
+  background-color: hsl(0, 0%, 0%);
+  border-color: hsl(0, 0%, 26.7%);
+  color: hsl(255, 100%, 100%);
+}
+.button.is-tertiary:disabled,
+.button.is-medium.is-tertiary:disabled,
+.button.is-default.is-tertiary:disabled {
+  color: hsl(0, 0%, 81.2%);
+}
+.button.is-tertiary:disabled:hover,
+.button.is-medium.is-tertiary:disabled:hover,
+.button.is-default.is-tertiary:disabled:hover {
+  background-color: hsl(255, 100%, 100%);
+  color: hsl(0, 0%, 81.2%) !important;
+  border-color: transparent;
+}
+.button.is-cta,
+.button input[type=submit],
+.button.is-medium.is-cta,
+.button.is-medium input[type=submit],
+.button.is-default.is-cta,
+.button.is-default input[type=submit] {
+  color: hsl(211.2, 81.1%, 31.2%);
+  border-color: hsl(211.2, 81.1%, 31.2%);
+  background-color: transparent;
+  padding: calc(1rem - 0.125rem) calc(2.5rem - 0.125rem) !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+}
+.button.is-cta:not(.is-tertiary):not(.is-secondary),
+.button input[type=submit]:not(.is-tertiary):not(.is-secondary),
+.button.is-medium.is-cta:not(.is-tertiary):not(.is-secondary),
+.button.is-medium input[type=submit]:not(.is-tertiary):not(.is-secondary),
+.button.is-default.is-cta:not(.is-tertiary):not(.is-secondary),
+.button.is-default input[type=submit]:not(.is-tertiary):not(.is-secondary) {
+  background-color: hsl(211.2, 81.1%, 31.2%);
+  border-color: transparent;
+  color: hsl(255, 100%, 100%);
+}
+.button.is-cta:not(.is-tertiary):not(.is-secondary):hover,
+.button input[type=submit]:not(.is-tertiary):not(.is-secondary):hover,
+.button.is-medium.is-cta:not(.is-tertiary):not(.is-secondary):hover,
+.button.is-medium input[type=submit]:not(.is-tertiary):not(.is-secondary):hover,
+.button.is-default.is-cta:not(.is-tertiary):not(.is-secondary):hover,
+.button.is-default input[type=submit]:not(.is-tertiary):not(.is-secondary):hover {
+  background-color: hsl(0, 0%, 26.7%);
+}
+.button.is-cta:not(.is-tertiary):not(.is-secondary):active,
+.button input[type=submit]:not(.is-tertiary):not(.is-secondary):active,
+.button.is-medium.is-cta:not(.is-tertiary):not(.is-secondary):active,
+.button.is-medium input[type=submit]:not(.is-tertiary):not(.is-secondary):active,
+.button.is-default.is-cta:not(.is-tertiary):not(.is-secondary):active,
+.button.is-default input[type=submit]:not(.is-tertiary):not(.is-secondary):active {
+  background-color: hsl(0, 0%, 0%);
+}
+.button.is-cta:not(.is-tertiary):not(.is-secondary):disabled,
+.button input[type=submit]:not(.is-tertiary):not(.is-secondary):disabled,
+.button.is-medium.is-cta:not(.is-tertiary):not(.is-secondary):disabled,
+.button.is-medium input[type=submit]:not(.is-tertiary):not(.is-secondary):disabled,
+.button.is-default.is-cta:not(.is-tertiary):not(.is-secondary):disabled,
+.button.is-default input[type=submit]:not(.is-tertiary):not(.is-secondary):disabled {
+  background-color: hsl(0, 0%, 81.2%);
+}
+.button.is-cta:disabled,
+.button input[type=submit]:disabled,
+.button.is-medium.is-cta:disabled,
+.button.is-medium input[type=submit]:disabled,
+.button.is-default.is-cta:disabled,
+.button.is-default input[type=submit]:disabled {
+  background-color: transparent;
+  color: hsl(0, 0%, 81.2%);
+}
+.button.is-cta span.icon,
+.button input[type=submit] span.icon,
+.button.is-medium.is-cta span.icon,
+.button.is-medium input[type=submit] span.icon,
+.button.is-default.is-cta span.icon,
+.button.is-default input[type=submit] span.icon {
+  height: auto;
+  width: auto;
+  max-height: 1.125rem;
+  max-width: 1.125rem;
+}
+.button.is-cta span.icon:first-child:not(:last-child),
+.button input[type=submit] span.icon:first-child:not(:last-child),
+.button.is-medium.is-cta span.icon:first-child:not(:last-child),
+.button.is-medium input[type=submit] span.icon:first-child:not(:last-child),
+.button.is-default.is-cta span.icon:first-child:not(:last-child),
+.button.is-default input[type=submit] span.icon:first-child:not(:last-child) {
+  margin-left: -1rem;
+  margin-right: 1rem;
+}
+.button.is-cta span.icon:first-child:not(:last-child) + span,
+.button input[type=submit] span.icon:first-child:not(:last-child) + span,
+.button.is-medium.is-cta span.icon:first-child:not(:last-child) + span,
+.button.is-medium input[type=submit] span.icon:first-child:not(:last-child) + span,
+.button.is-default.is-cta span.icon:first-child:not(:last-child) + span,
+.button.is-default input[type=submit] span.icon:first-child:not(:last-child) + span {
+  padding-right: 0;
+}
+.button.is-cta span:first-child:not([class=icon]),
+.button input[type=submit] span:first-child:not([class=icon]),
+.button.is-medium.is-cta span:first-child:not([class=icon]),
+.button.is-medium input[type=submit] span:first-child:not([class=icon]),
+.button.is-default.is-cta span:first-child:not([class=icon]),
+.button.is-default input[type=submit] span:first-child:not([class=icon]) {
+  padding-left: 0 !important;
+}
+.button.is-cta span:first-child:not([class=icon]) + span,
+.button input[type=submit] span:first-child:not([class=icon]) + span,
+.button.is-medium.is-cta span:first-child:not([class=icon]) + span,
+.button.is-medium input[type=submit] span:first-child:not([class=icon]) + span,
+.button.is-default.is-cta span:first-child:not([class=icon]) + span,
+.button.is-default input[type=submit] span:first-child:not([class=icon]) + span {
+  margin-left: 1rem !important;
+  margin-right: -1rem !important;
+}
+
+.buttons .button:not(:last-child):not(.is-fullwidth) {
+  margin-right: 4rem;
+}
+.buttons .button {
+  margin-bottom: 2rem;
+}
+
+/*Styles for html headings*/
+h1.is-1,
+h2.is-1,
+h3.is-1,
+h4.is-1,
+h5.is-1,
+h6.is-1 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 2.5rem;
+  font-size: 2rem !important;
+}
+h1.is-2,
+h2.is-2,
+h3.is-2,
+h4.is-2,
+h5.is-2,
+h6.is-2 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 2.1875rem;
+  font-size: 1.75rem !important;
+}
+h1.is-3,
+h2.is-3,
+h3.is-3,
+h4.is-3,
+h5.is-3,
+h6.is-3 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.875rem;
+  font-size: 1.5rem !important;
+}
+h1.is-4,
+h2.is-4,
+h3.is-4,
+h4.is-4,
+h5.is-4,
+h6.is-4 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.5625rem;
+  font-size: 1.25rem !important;
+}
+h1.is-5,
+h2.is-5,
+h3.is-5,
+h4.is-5,
+h5.is-5,
+h6.is-5 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.25rem;
+  font-size: 1rem !important;
+}
+h1.is-6,
+h2.is-6,
+h3.is-6,
+h4.is-6,
+h5.is-6,
+h6.is-6 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.25rem;
+  font-size: 1rem !important;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/*Styles for html tables*/
+/*
+Table Styles
+PhilaUI table styles applied to the .table class, and compatible with the vue-good-table plugin
+*/
+table.table {
+  width: 100%;
+  border: 0;
+}
+table.table thead tr th {
+  background-clip: padding-box;
+  position: relative;
+  background-color: hsl(0, 0%, 26.7%);
+  color: hsl(255, 100%, 100%);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: 3px solid hsl(255, 100%, 100%);
+  padding: 10px 8px;
+  line-height: 18px;
+}
+table.table thead tr th.sortable {
+  cursor: pointer;
+  padding-right: 20px;
+}
+table.table thead tr th.sortable:before, table.table thead tr th.sortable:after {
+  border-radius: 1px;
+  border: 5px solid transparent;
+  content: "";
+  display: block;
+  height: 0;
+  right: 8px;
+  top: 8px;
+  position: absolute;
+  width: 0;
+}
+table.table thead tr th.sortable:before {
+  border-bottom-color: #b5b5b5;
+}
+table.table thead tr th.sortable:after {
+  border-top-color: #b5b5b5;
+  margin-top: 12px;
+}
+table.table thead tr th.sortable:hover:before {
+  border-bottom-color: hsl(255, 100%, 100%);
+}
+table.table thead tr th.sortable:hover:after {
+  border-top-color: hsl(255, 100%, 100%);
+}
+table.table thead tr th.sortable.sorting {
+  background-color: hsl(211.2, 72.8%, 47.6%);
+  color: hsl(255, 100%, 100%);
+}
+table.table thead tr th.sortable.sorting.sorting-asc:before {
+  border-bottom-color: hsl(255, 100%, 100%);
+}
+table.table thead tr th.sortable.sorting.sorting-asc:after {
+  border-top-color: #85b4e6;
+}
+table.table thead tr th.sortable.sorting.sorting-desc:before {
+  border-bottom-color: #85b4e6;
+}
+table.table thead tr th.sortable.sorting.sorting-desc:after {
+  border-top-color: hsl(255, 100%, 100%);
+}
+table.table tbody tr:nth-of-type(even) td {
+  background-color: #d8d8d8;
+}
+table.table tbody tr td {
+  background-clip: padding-box;
+  position: relative;
+  background-color: hsl(0, 0%, 94.1%);
+  color: hsl(0, 0%, 26.7%);
+  font-size: 0.875rem;
+  border: 3px solid hsl(255, 100%, 100%);
+  padding: 10px 8px;
+  line-height: 20px;
+}
+table.table.is-align-middle td,
+table.table.is-align-middle th {
+  vertical-align: middle;
+}
+table.table.table-responsive {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+/*Styles for th content class*/
+/*
+Content Styles
+Styles built on top of the Bulma .content class
+*/
+.content h1 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 2.5rem;
+  font-size: 2rem !important;
+}
+.content h2 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 2.1875rem;
+  font-size: 1.75rem !important;
+}
+.content h3 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.875rem;
+  font-size: 1.5rem !important;
+}
+.content h4 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.5625rem;
+  font-size: 1.25rem !important;
+}
+.content h5 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.25rem;
+  font-size: 1rem !important;
+}
+.content h6 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.25rem;
+  font-size: 1rem !important;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.content h1.is-1,
+.content h2.is-1,
+.content h3.is-1,
+.content h4.is-1,
+.content h5.is-1,
+.content h6.is-1 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 2.5rem;
+  font-size: 2rem !important;
+}
+.content h1.is-2,
+.content h2.is-2,
+.content h3.is-2,
+.content h4.is-2,
+.content h5.is-2,
+.content h6.is-2 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 2.1875rem;
+  font-size: 1.75rem !important;
+}
+.content h1.is-3,
+.content h2.is-3,
+.content h3.is-3,
+.content h4.is-3,
+.content h5.is-3,
+.content h6.is-3 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.875rem;
+  font-size: 1.5rem !important;
+}
+.content h1.is-4,
+.content h2.is-4,
+.content h3.is-4,
+.content h4.is-4,
+.content h5.is-4,
+.content h6.is-4 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.5625rem;
+  font-size: 1.25rem !important;
+}
+.content h1.is-5,
+.content h2.is-5,
+.content h3.is-5,
+.content h4.is-5,
+.content h5.is-5,
+.content h6.is-5 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.25rem;
+  font-size: 1rem !important;
+}
+.content h1.is-6,
+.content h2.is-6,
+.content h3.is-6,
+.content h4.is-6,
+.content h5.is-6,
+.content h6.is-6 {
+  font-family: Montserrat, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: hsl(0, 0%, 26.7%);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.25rem;
+  font-size: 1rem !important;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.content a {
+  color: hsl(211.2, 81.1%, 31.2%);
+  text-decoration: underline;
+  font-weight: 700;
+}
+.content a.external-link, .content a.is-external-link {
+  display: inline-block;
+}
+.content a.external-link:after, .content a.is-external-link:after {
+  content: "\f35d";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  display: inline-block;
+  font-size: 0.875rem;
+  margin-left: 0.25rem;
+}
+.content a.is-inverted {
+  color: hsl(255, 100%, 100%);
+}
+.content .is-small a,
+.content a.is-small {
+  font-size: 0.875rem;
+}
+.content .is-small a.external-link:after, .content .is-small a.is-external-link:after,
+.content a.is-small.external-link:after,
+.content a.is-small.is-external-link:after {
+  font-size: 0.7rem;
+}
+.content p {
+  font-family: "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.content p.is-large {
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+.content p.is-small a {
+  font-size: 0.875rem;
+}
+.content p.is-small a.external-link:after, .content p.is-small a.is-external-link:after {
+  font-size: 0.7rem;
+}
+.content ul:not(:last-child),
+.content ol:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.content ul,
+.content ol {
+  margin-top: 0;
+}
+.content ul ul,
+.content ul ol,
+.content ol ol,
+.content ol ul {
+  margin-top: 0;
+}
+.content ul li,
+.content ol li {
+  margin: 0;
+  line-height: 2rem;
+}
+.content p + ul,
+.content p + ol {
+  margin-top: -0.5rem;
+}
+.content blockquote {
+  border: 0;
+}
+.content table {
+  width: 100%;
+  border: 0;
+}
+.content table thead tr th {
+  background-clip: padding-box;
+  position: relative;
+  background-color: hsl(0, 0%, 26.7%);
+  color: hsl(255, 100%, 100%);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: 3px solid hsl(255, 100%, 100%);
+  padding: 10px 8px;
+  line-height: 18px;
+}
+.content table thead tr th.sortable {
+  cursor: pointer;
+  padding-right: 20px;
+}
+.content table thead tr th.sortable:before, .content table thead tr th.sortable:after {
+  border-radius: 1px;
+  border: 5px solid transparent;
+  content: "";
+  display: block;
+  height: 0;
+  right: 8px;
+  top: 8px;
+  position: absolute;
+  width: 0;
+}
+.content table thead tr th.sortable:before {
+  border-bottom-color: #b5b5b5;
+}
+.content table thead tr th.sortable:after {
+  border-top-color: #b5b5b5;
+  margin-top: 12px;
+}
+.content table thead tr th.sortable:hover:before {
+  border-bottom-color: hsl(255, 100%, 100%);
+}
+.content table thead tr th.sortable:hover:after {
+  border-top-color: hsl(255, 100%, 100%);
+}
+.content table thead tr th.sortable.sorting {
+  background-color: hsl(211.2, 72.8%, 47.6%);
+  color: hsl(255, 100%, 100%);
+}
+.content table thead tr th.sortable.sorting.sorting-asc:before {
+  border-bottom-color: hsl(255, 100%, 100%);
+}
+.content table thead tr th.sortable.sorting.sorting-asc:after {
+  border-top-color: #85b4e6;
+}
+.content table thead tr th.sortable.sorting.sorting-desc:before {
+  border-bottom-color: #85b4e6;
+}
+.content table thead tr th.sortable.sorting.sorting-desc:after {
+  border-top-color: hsl(255, 100%, 100%);
+}
+.content table tbody tr:nth-of-type(even) td {
+  background-color: #d8d8d8;
+}
+.content table tbody tr td {
+  background-clip: padding-box;
+  position: relative;
+  background-color: hsl(0, 0%, 94.1%);
+  color: hsl(0, 0%, 26.7%);
+  font-size: 0.875rem;
+  border: 3px solid hsl(255, 100%, 100%);
+  padding: 10px 8px;
+  line-height: 20px;
+}
+.content table.is-align-middle td,
+.content table.is-align-middle th {
+  vertical-align: middle;
+}
+.content table.table-responsive {
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+/*Vendors overwrites*/
+.vgt-inner-wrap {
+  border-radius: 0;
+  box-shadow: none;
+}
+.vgt-inner-wrap table.table thead tr th button {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=variables.css.map */

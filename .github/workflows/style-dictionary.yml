@@ -1,12 +1,16 @@
-name: Style Dictionary Build
+name: Parse Figma CSS & Build Tokens
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'colors.tokens.json'
-      - 'config.json'
+      - 'input/**'
+      - 'parse-figma-css.js'
+      - 'convert-to-tokens.js'
+      - 'style-dictionary.config.js'
+      - 'css-imports/**'
+      - 'colors.scss'
 
 permissions:
   contents: write
@@ -25,15 +29,30 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install style-dictionary --save-dev
+        run: npm install
 
-      - name: Run Style Dictionary
-        run: npx style-dictionary build
+      - name: Parse Figma CSS export
+        run: node parse-figma-css.js
+
+      - name: Convert to DTCG tokens
+        run: node convert-to-tokens.js
+
+      - name: Build Style Dictionary platforms
+        run: npx style-dictionary build --config style-dictionary.config.js
+
+      - name: Compile SCSS bundle
+        run: npx sass colors.scss build/variables.css
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add build/variables.css
-          git commit -m "Auto-generate CSS file"
-          git push
+          git add build/ || echo "No build changes to add"
+          git add package-lock.json || echo "No lock file changes"
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Build: parse Figma CSS and compile tokens"
+            git push
+          fi

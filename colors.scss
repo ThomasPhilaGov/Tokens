@@ -1,0 +1,36 @@
+/*
+All styles imported here
+With exception of deprecated styles
+*/
+
+/*Variables, mixins and other helpers*/
+@import "css-imports/helpers.scss";
+
+/*The bulma library*/
+/*@import "css-imports/bulma/bulma.sass";
+
+/*The bulma checkradio plugin*/
+/*@import "css-imports/bulma-checkradio/src/sass/index.sass";
+
+/*Overall project styles*/
+@import "css-imports/base.scss";
+
+/*Styles for form inputs components*/
+@import "css-imports/inputs.scss";
+
+/*Styles for buttons*/
+@import "css-imports/buttons.scss";
+
+/*Styles for html headings*/
+@import "css-imports/headings.scss";
+
+/*Styles for html tables*/
+@import "css-imports/table.scss";
+
+/*Styles for th content class*/
+@import "css-imports/content.scss";
+
+/*Vendors overwrites*/
+@import "css-imports/vendors.scss";
+
+
