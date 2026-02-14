@@ -1,15 +1,14 @@
-name: Style Dictionary Build
+name: Parse Figma CSS & Build Tokens
 
 on:
   push:
     branches:
       - main
-      - css-json  # Add your branch name here
     paths:
-      - 'colors.tokens.json'
-      - 'config.json'
-      - 'css-imports/variables.scss'
+      - 'input/**'
+      - 'parse-figma-css.js'
       - 'css-imports/**'
+      - 'colors.scss'
 
 permissions:
   contents: write
@@ -30,26 +29,24 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install sass
-        run: npm install sass --save-dev
+      - name: Parse Figma CSS export
+        run: node parse-figma-css.js
 
-      - name: Convert SCSS to JSON
-        run: node scss-to-json.js css-imports/variables.scss build/variables.json
+      - name: Compile SCSS bundle
+        run: npx sass colors.scss build/variables.css
 
-      - name: Post-process JSON
-        run: node post-process-json.js
-
-      - name: Commit and push JSON changes
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add build/variables.json || echo "No changes to add"
-          git add build/resolved-tokens.json || echo "No changes to add"
-          git add package-lock.json package.json || echo "No package changes to add"
-          
+          git add build/generated/*.css || echo "No generated CSS to add"
+          git add build/variables.json || echo "No JSON to add"
+          git add build/variables.css || echo "No compiled CSS to add"
+          git add package-lock.json || echo "No lock file changes"
+
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Convert SCSS to JSON"
+            git commit -m "Build: parse Figma CSS and compile tokens"
             git push
           fi

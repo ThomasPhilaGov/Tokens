@@ -1,0 +1,59 @@
+:root {
+  /* schemes */
+  /* Generated from Figma CSS export - references preserved */
+
+  --Schemes-Alert: var(--Palettes-Alert-Alert-400);
+  --Schemes-Alert-Container: var(--Palettes-Alert-Alert-550);
+  --Schemes-Background: var(--white-400-white);
+  --Schemes-Border: var(--Palettes-Neutral-Neutral-400);
+  --Schemes-Border-Variant: var(--Palettes-Neutral-Variant-Neutral-Variant-250);
+  --Schemes-Error: var(--Palettes-Error-Error-300);
+  --Schemes-Error-Container: var(--Palettes-Error-Error-750);
+  --Schemes-Inverse-Primary: var(--Palettes-Primary-Primary-400);
+  --Schemes-Inverse-Surface: var(--Palettes-Neutral-Variant-Neutral-Variant-200);
+  --Schemes-On-Alert: var(--Palettes-Alert-Alert-750);
+  --Schemes-On-Alert-Container: var(--Schemes-On-Surface);
+  --Schemes-On-Background: var(--Schemes-On-Surface);
+  --Schemes-On-Error: var(--white-400-white);
+  --Schemes-On-Error-Container: var(--Palettes-Error-Error-250);
+  --Schemes-On-Inverse-Surface: var(--Palettes-Neutral-Neutral-750);
+  --Schemes-On-Inverse-Surface-Bright: var(--Palettes-Neutral-Neutral-750);
+  --Schemes-On-Primary: var(--white-400-white);
+  --Schemes-On-Primary-Container: var(--Palettes-Primary-Primary-750);
+  --Schemes-On-Primary-Fixed: var(--Palettes-Primary-Primary-100);
+  --Schemes-On-Primary-Fixed-Variant: var(--Palettes-Primary-Primary-50);
+  --Schemes-On-Secondary: var(--Schemes-Surface-Bright);
+  --Schemes-On-Secondary-Container: var(--Palettes-Secondary-Secondary-750);
+  --Schemes-On-Secondary-Fixed: var(--Palettes-Secondary-Secondary-50);
+  --Schemes-On-Secondary-Fixed-Variant: var(--Palettes-Secondary-Secondary-250);
+  --Schemes-On-Surface: var(--black-400-black);
+  --Schemes-On-Surface-Variant: var(--Palettes-Neutral-Neutral-50);
+  --Schemes-On-Tertiary: var(--Palettes-Tertiary-Tertiary-750);
+  --Schemes-On-Tertiary-Container: var(--Palettes-Tertiary-Tertiary-750);
+  --Schemes-On-Tertiary-Fixed: var(--Palettes-Tertiary-Tertiary-150);
+  --Schemes-On-Tertiary-Fixed-Variant: var(--Palettes-Tertiary-Tertiary-50);
+  --Schemes-Primary: var(--Palettes-Primary-Primary-400);
+  --Schemes-Primary-Container: var(--Palettes-Primary-Primary-200);
+  --Schemes-Primary-Fixed: var(--Palettes-Primary-Primary-650);
+  --Schemes-Primary-Fixed-Dim: var(--Palettes-Primary-Primary-400);
+  --Schemes-Scrim: var(--Extended-Colors-Black);
+  --Schemes-Secondary: var(--Palettes-Secondary-Secondary-150);
+  --Schemes-Secondary-Container: var(--Palettes-Secondary-Secondary-400);
+  --Schemes-Secondary-Fixed: var(--Palettes-Secondary-Secondary-750);
+  --Schemes-Secondary-Fixed-Dim: var(--Palettes-Secondary-Secondary-550);
+  --Schemes-Shadow: var(--Extended-Colors-Black);
+  --Schemes-Surface: var(--Palettes-Neutral-Neutral-500);
+  --Schemes-Surface-Bright: var(--Palettes-Neutral-Neutral-750);
+  --Schemes-Surface-Container: var(--Palettes-Neutral-Neutral-500);
+  --Schemes-Surface-Container-High: var(--Palettes-Neutral-Neutral-400);
+  --Schemes-Surface-Container-Highest: var(--Palettes-Neutral-Neutral-300);
+  --Schemes-Surface-Container-Low: var(--Palettes-Neutral-Neutral-600);
+  --Schemes-Surface-Container-Lowest: var(--Palettes-Neutral-Neutral-750);
+  --Schemes-Surface-Dim: var(--Palettes-Neutral-Neutral-400);
+  --Schemes-Surface-Tint: var(--Palettes-Secondary-Secondary-350);
+  --Schemes-Surface-Variant: var(--Palettes-Neutral-Variant-Neutral-Variant-550);
+  --Schemes-Tertiary: var(--Palettes-Tertiary-Tertiary-150);
+  --Schemes-Tertiary-Container: var(--Palettes-Tertiary-Tertiary-250);
+  --Schemes-Tertiary-Fixed: var(--Palettes-Tertiary-Tertiary-600);
+  --Schemes-Tertiary-Fixed-Dim: var(--Palettes-Tertiary-Tertiary-550);
+}

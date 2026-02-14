@@ -1,0 +1,45 @@
+:root {
+  /* size */
+  /* Generated from Figma CSS export - references preserved */
+
+  --border-radius-2xl: var(--scale-400);
+  --border-radius-full: 624.9375rem;
+  --border-radius-l: var(--scale-200);
+  --border-radius-m: var(--scale-150);
+  --border-radius-none: var(--scale-0);
+  --border-radius-s: var(--scale-100);
+  --border-radius-xl: var(--scale-300);
+  --border-radius-xs: var(--scale-50);
+  --border-width-2xl: var(--scale-100);
+  --border-width-l: var(--scale-50);
+  --border-width-m: var(--scale-25);
+  --border-width-s: var(--scale-10);
+  --border-width-xl: var(--scale-75);
+  --border-width-xs: var(--scale-0);
+  --breakpoints-2xl: 100rem;
+  --breakpoints-l: 60rem;
+  --breakpoints-m: 40rem;
+  --breakpoints-s: 20rem;
+  --breakpoints-xl: 80rem;
+  --breakpoints-xs: 0;
+  --devices-2xl: 120rem;
+  --devices-l: 64rem;
+  --devices-m: 48rem;
+  --devices-s: 23.4375rem;
+  --devices-xl: 90rem;
+  --devices-xs: 10.125rem;
+  --spacing-2xl: var(--scale-500);
+  --spacing-2xs: var(--scale-50);
+  --spacing-3xl: var(--scale-600);
+  --spacing-3xs: var(--scale-25);
+  --spacing-4xl: var(--scale-800);
+  --spacing-5xl: var(--scale-900);
+  --spacing-6xl: var(--scale-1000);
+  --spacing-7xl: var(--scale-1200);
+  --spacing-l: var(--scale-300);
+  --spacing-m: var(--scale-200);
+  --spacing-none: var(--scale-0);
+  --spacing-s: var(--scale-150);
+  --spacing-xl: var(--scale-400);
+  --spacing-xs: var(--scale-100);
+}

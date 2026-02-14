@@ -1,9 +1,11 @@
 {
-  "devDependencies": {
-    "sass": "^1.85.0",
-    "style-dictionary": "^4.3.3"
+  "type": "module",
+  "scripts": {
+    "parse": "node parse-figma-css.js",
+    "build:css": "npx sass colors.scss build/variables.css",
+    "build": "npm run parse && npm run build:css"
   },
-  "dependencies": {
-    "node-sass": "^9.0.0"
+  "devDependencies": {
+    "sass": "^1.85.0"
   }
 }

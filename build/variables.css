@@ -3,6 +3,25 @@ All styles imported here
 With exception of deprecated styles
 */
 /*Variables, mixins and other helpers*/
+/* Test Variables 
+Testing against the variables.scss file
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+Test the variables.scss file to ensure that the variables are being imported correctly
+
+*/
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat Regular"), local("Montserrat-Regular"), url("https://www.phila.gov/assets/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("https://www.phila.gov/assets/fonts/Montserrat/Montserrat-Regular.woff") format("woff");
@@ -1237,3 +1256,5 @@ Styles built on top of the Bulma .content class
   background-color: transparent;
   cursor: pointer;
 }
+
+/*# sourceMappingURL=variables.css.map */
