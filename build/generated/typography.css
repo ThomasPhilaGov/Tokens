@@ -147,6 +147,18 @@
   --Label-2XL-font-label-2xl-margin-top: var(--Body-2XL-font-body-2xl-margin-top);
   --Label-2XL-font-label-2xl-size: var(--Body-2XL-font-body-2xl-size);
   --Label-2XL-font-label-2xl-weight: var(--Base-font-variables-Weight-font-weight-semibold);
+  --Label-3XL-font-label-3xl-family: var(--Heading-font-heading-family);
+  --Label-3XL-font-label-3xl-lineheight: var(--scale-600);
+  --Label-3XL-font-label-3xl-margin-bottom: var(--scale-200);
+  --Label-3XL-font-label-3xl-margin-top: var(--scale-100);
+  --Label-3XL-font-label-3xl-size: var(--scale-450);
+  --Label-3XL-font-label-3xl-weight: var(--Base-font-variables-Weight-font-weight-semibold);
+  --Label-4XL-font-label-4xl-family: var(--Heading-font-heading-family);
+  --Label-4XL-font-label-4xl-lineheight: var(--scale-600);
+  --Label-4XL-font-label-4xl-margin-bottom: var(--scale-200);
+  --Label-4XL-font-label-4xl-margin-top: var(--scale-200);
+  --Label-4XL-font-label-4xl-size: var(--scale-500);
+  --Label-4XL-font-label-4xl-weight: var(--Base-font-variables-Weight-font-weight-semibold);
   --Label-Default-font-label-default-family: var(--Label-font-label-family);
   --Label-Default-font-label-default-lineheight: var(--Body-Default-font-body-default-lineheight);
   --Label-Default-font-label-default-margin-bottom: var(--Body-Default-font-body-default-margin-bottom);
@@ -180,22 +192,14 @@
   --Label-Small-font-label-small-weight: var(--Base-font-variables-Weight-font-weight-semibold);
   --Link-on-Primary-Default-font-link-on-primary-default-family: var(--Body-font-body-family);
   --Link-on-Primary-Default-font-link-on-primary-default-lineheight: var(--Body-Default-font-body-default-lineheight);
-  --Link-on-Primary-Default-font-link-on-primary-default-margin-bottom: var(
-    --Body-Default-font-body-default-margin-bottom
-  );
+  --Link-on-Primary-Default-font-link-on-primary-default-margin-bottom: var(--Body-Default-font-body-default-margin-bottom);
   --Link-on-Primary-Default-font-link-on-primary-default-margin-top: var(--Body-Default-font-body-default-margin-top);
   --Link-on-Primary-Default-font-link-on-primary-default-size: var(--Body-Default-font-body-default-size);
   --Link-on-Primary-Default-font-link-on-primary-default-weight: var(--Base-font-variables-Weight-font-weight-bold);
   --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-family: var(--Body-font-body-family);
-  --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-lineheight: var(
-    --Body-ExtraLarge-font-body-xlarge-lineheight
-  );
-  --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-margin-bottom: var(
-    --Body-ExtraLarge-font-body-xlarge-margin-bottom
-  );
-  --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-margin-top: var(
-    --Body-ExtraLarge-font-body-xlarge-margin-top
-  );
+  --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-lineheight: var(--Body-ExtraLarge-font-body-xlarge-lineheight);
+  --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-margin-bottom: var(--Body-ExtraLarge-font-body-xlarge-margin-bottom);
+  --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-margin-top: var(--Body-ExtraLarge-font-body-xlarge-margin-top);
   --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-size: var(--Body-ExtraLarge-font-body-xlarge-size);
   --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-weight: var(--Base-font-variables-Weight-font-weight-bold);
   --Link-on-Primary-ExtraSmall-font-link-on-primary-small-xs-bottom: var(--Body-ExtraSmall-font-body-xs-margin-bottom);
@@ -219,22 +223,14 @@
   --Link-on-Primary-Small-font-link-on-primary-small-weight: var(--Base-font-variables-Weight-font-weight-bold);
   --Link-on-Surface-Default-font-link-on-surface-default-family: var(--Body-font-body-family);
   --Link-on-Surface-Default-font-link-on-surface-default-lineheight: var(--Body-Default-font-body-default-lineheight);
-  --Link-on-Surface-Default-font-link-on-surface-default-margin-bottom: var(
-    --Body-Default-font-body-default-margin-bottom
-  );
+  --Link-on-Surface-Default-font-link-on-surface-default-margin-bottom: var(--Body-Default-font-body-default-margin-bottom);
   --Link-on-Surface-Default-font-link-on-surface-default-margin-top: var(--Body-Default-font-body-default-margin-top);
   --Link-on-Surface-Default-font-link-on-surface-default-size: var(--Body-Default-font-body-default-size);
   --Link-on-Surface-Default-font-link-on-surface-default-weight: var(--Base-font-variables-Weight-font-weight-bold);
   --Link-on-Surface-ExtraLarge-font-link-on-surface-xlarge-family: var(--Body-font-body-family);
-  --Link-on-Surface-ExtraLarge-font-link-on-surface-xlarge-lineheight: var(
-    --Body-ExtraLarge-font-body-xlarge-lineheight
-  );
-  --Link-on-Surface-ExtraLarge-font-link-on-surface-xlarge-margin-bottom: var(
-    --Body-ExtraLarge-font-body-xlarge-margin-bottom
-  );
-  --Link-on-Surface-ExtraLarge-font-link-on-surface-xlarge-margin-top: var(
-    --Body-ExtraLarge-font-body-xlarge-margin-top
-  );
+  --Link-on-Surface-ExtraLarge-font-link-on-surface-xlarge-lineheight: var(--Body-ExtraLarge-font-body-xlarge-lineheight);
+  --Link-on-Surface-ExtraLarge-font-link-on-surface-xlarge-margin-bottom: var(--Body-ExtraLarge-font-body-xlarge-margin-bottom);
+  --Link-on-Surface-ExtraLarge-font-link-on-surface-xlarge-margin-top: var(--Body-ExtraLarge-font-body-xlarge-margin-top);
   --Link-on-Surface-ExtraLarge-font-link-on-surface-xlarge-size: var(--Body-ExtraLarge-font-body-xlarge-size);
   --Link-on-Surface-ExtraLarge-font-link-on-surface-xlarge-weight: var(--Base-font-variables-Weight-font-weight-bold);
   --Link-on-Surface-ExtraSmall-font-link-on-surface-xs-bottom: var(--Body-ExtraSmall-font-body-xs-margin-bottom);
@@ -309,13 +305,13 @@
     --Heading-H6-font-heading-6-lineheight: var(--scale-300);
     --Heading-H6-font-heading-6-margin-top: var(--scale-200);
     --Heading-H6-font-heading-6-size: var(--scale-200);
+    --Label-3XL-font-label-3xl-margin-bottom: var(--scale-300);
+    --Label-3XL-font-label-3xl-margin-top: var(--scale-200);
+    --Label-3XL-font-label-3xl-size: var(--scale-500);
+    --Label-4XL-font-label-4xl-lineheight: var(--scale-800);
+    --Label-4XL-font-label-4xl-margin-bottom: var(--scale-300);
+    --Label-4XL-font-label-4xl-margin-top: var(--scale-300);
+    --Label-4XL-font-label-4xl-size: var(--scale-600);
     --Label-ExtraSmall-font-label-xs-margin-top: var(--Body-Default-font-body-default-margin-top);
-    --Link-on-Primary-Default-font-link-on-primary-default-weight: var(--Base-font-variables-Weight-font-weight-regular);
-    --Link-on-Primary-ExtraLarge-font-link-on-primary-xlarge-weight: var(
-    --Base-font-variables-Weight-font-weight-regular
-  );
-    --Link-on-Primary-ExtraSmall-font-link-on-primary-xs-weight: var(--Base-font-variables-Weight-font-weight-light);
-    --Link-on-Primary-Large-font-link-on-primary-large-weight: var(--Base-font-variables-Weight-font-weight-regular);
-    --Link-on-Primary-Small-font-link-on-primary-small-weight: var(--Base-font-variables-Weight-font-weight-light);
   }
 }

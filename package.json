@@ -2,10 +2,13 @@
   "type": "module",
   "scripts": {
     "parse": "node parse-figma-css.js",
+    "convert": "node convert-to-tokens.js",
+    "build:platforms": "style-dictionary build --config style-dictionary.config.js",
     "build:css": "npx sass colors.scss build/variables.css",
-    "build": "npm run parse && npm run build:css"
+    "build": "npm run parse && npm run convert && npm run build:platforms && npm run build:css"
   },
   "devDependencies": {
-    "sass": "^1.85.0"
+    "sass": "^1.85.0",
+    "style-dictionary": "^4.3.3"
   }
 }

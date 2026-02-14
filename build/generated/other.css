@@ -2,9 +2,9 @@
   /* other */
   /* Generated from Figma CSS export - references preserved */
 
+  --Announced-date-true: 1;
   --border-left-right: 0;
   --border-top-bottom: 0;
-  --border-width: 0;
   --Breadcrumb-Boolean: 0;
   --Breadcrumb-Chevron-Visible: 0;
   --Breadcrumb-Home-Visible: 1;
@@ -21,14 +21,14 @@
   --button-button: 1;
   --button-button-primary: 1;
   --button-button-secondary: 1;
+  --Button-group-true: 1;
+  --Button-true: 1;
   --Card-media-exdent: 0;
   --checkbox: 1;
-  --color-background-color: rgb(255, 255, 255);
-  --color-border-color: rgb(255, 255, 255);
-  --color-button-color: rgb(255, 255, 255);
-  --color-icon-color: rgb(255, 255, 255);
-  --color-label-color: rgb(255, 255, 255);
+  --Color: rgb(255, 255, 255);
+  --container-dimension: var(--scale-300);
   --content-color: var(--Schemes-On-Surface);
+  --Content-true: 1;
   --date: 1;
   --flag-layout: "Standard";
   --Footer-Column-1-City-Commissioners: "City Commissioners";
@@ -51,6 +51,7 @@
   --Footer-Column-3-Visit-Philadelphia: "Visit Philadelphia";
   --Footer-Footer-Icon: 1;
   --Footer-footer-width: 1440px;
+  --Footer-group-true: 1;
   --Footer-horz-rule: 0;
   --Footer-Sub-Footer-Accessibility: "Accessibility";
   --Footer-Sub-Footer-Privacy-policy: "Privacy policy";
@@ -64,10 +65,12 @@
   --Header-Display-Mayor-Link-Visible: 1;
   --Header-Display-Mobile-Globe-Visible: 0;
   --Header-Display-Nav-Link-Visible: 1;
+  --Header-Display-Search-Field-Visible: 0;
   --Header-Display-Trusted-Banner-Text-Visible: 1;
   --Header-Menu-Button-Color: rgb(255, 255, 255);
   --Header-Size-Header-Width: 1440px;
   --headline: 1;
+  --Helper-text-true: 1;
   --Hover-Alternative-Nested-Off: 0;
   --Hover-Alternative-Nested-On: 1;
   --Icon-bars: "bars";
@@ -94,8 +97,16 @@
   --radius: var(--border-radius-l);
   --Sitewide-alerts-alert-icon: 1;
   --Sitewide-alerts-alert-width: var(--devices-xl);
-  --String: "String value";
+  --Stroke: 1;
+  --Subtitle-true: 1;
   --surface-color: var(--Schemes-Surface-Bright);
+  --Text-field-1-true: 1;
+  --Text-field-2-true: 1;
+  --Text-field-3-true: 1;
+  --Text-field-4-true: 1;
+  --Text-fields-true: 1;
+  --Title-true: 1;
   --top-icon-1: 1;
   --top-icon-2: 1;
+  --type-size: 16px;
 }

@@ -11,6 +11,7 @@
   --border-radius-xl: var(--scale-300);
   --border-radius-xs: var(--scale-50);
   --border-width-2xl: var(--scale-100);
+  --border-width-border-width-xxs: 0.125rem;
   --border-width-l: var(--scale-50);
   --border-width-m: var(--scale-25);
   --border-width-s: var(--scale-10);
