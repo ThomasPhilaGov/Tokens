@@ -2,10 +2,11 @@
   /* extended-colors */
   /* Generated from Figma CSS export - references preserved */
 
-  --Extended-Colors-Black: var(--black-400-black);
-  --Extended-Colors-Black-Container: var(--black-450-black);
+  --Extended-Colors-Black: var(--black-50-black);
+  --Extended-Colors-Black-Container: var(--black-50-black);
   --Extended-Colors-link-default: var(--Schemes-Primary);
   --Extended-Colors-link-hover: var(--Schemes-On-Surface);
   --Extended-Colors-link-visited: var(--Palettes-Visited-Visited-450);
-  --Extended-Colors-White: var(--white-400-white);
+  --Extended-Colors-On-Black-Container: var(--white-750-white);
+  --Extended-Colors-White: var(--white-750-white);
 }

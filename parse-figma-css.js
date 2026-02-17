@@ -9,7 +9,7 @@
  * Adapted from phila-ui-4/packages/core/scripts/parse-css-variables.js
  */
 
-import { readFileSync, writeFileSync, mkdirSync, readdirSync } from "fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync, cpSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -22,6 +22,11 @@ const INPUT_DIR = process.argv[2]
   : join(__dirname, "input");
 const OUTPUT_DIR = join(__dirname, "build", "generated");
 const JSON_OUTPUT = join(__dirname, "build", "variables.json");
+
+// Additional output targets — generated CSS is also synced to consuming projects
+const SYNC_TARGETS = [
+  join(__dirname, "..", "phila-ui-4", "packages", "core", "src", "styles", "generated"),
+];
 
 /**
  * Finds the first .css file in the input directory
@@ -404,6 +409,18 @@ function main() {
   const jsonData = generateVariablesJSON(variables);
   writeFileSync(JSON_OUTPUT, JSON.stringify(jsonData, null, 2));
   console.log(`   variables.json (${Object.keys(jsonData).length} variables)`);
+
+  // Sync generated CSS to consuming projects
+  console.log("\nSyncing to consuming projects...");
+  for (const target of SYNC_TARGETS) {
+    if (existsSync(join(target, ".."))) {
+      mkdirSync(target, { recursive: true });
+      cpSync(OUTPUT_DIR, target, { recursive: true });
+      console.log(`   Synced → ${target}`);
+    } else {
+      console.log(`   Skipped (not found): ${target}`);
+    }
+  }
 
   console.log("\nDone!");
   console.log(`   CSS output: ${OUTPUT_DIR}`);

@@ -3,6 +3,9 @@
   /* Generated from Figma CSS export - references preserved */
 
   --Announced-date-true: 1;
+  --black-25: rgba(0, 0, 0, 0.251);
+  --black-50: rgba(0, 0, 0, 0.502);
+  --black-75: rgba(0, 0, 0, 0.749);
   --border-left-right: 0;
   --border-top-bottom: 0;
   --Breadcrumb-Boolean: 0;
@@ -26,7 +29,6 @@
   --Card-media-exdent: 0;
   --checkbox: 1;
   --Color: rgb(255, 255, 255);
-  --container-dimension: var(--scale-300);
   --content-color: var(--Schemes-On-Surface);
   --Content-true: 1;
   --date: 1;
@@ -108,5 +110,4 @@
   --Title-true: 1;
   --top-icon-1: 1;
   --top-icon-2: 1;
-  --type-size: 16px;
 }

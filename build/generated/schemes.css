@@ -14,11 +14,11 @@
   --Schemes-On-Alert: var(--Palettes-Alert-Alert-750);
   --Schemes-On-Alert-Container: var(--Palettes-Alert-Alert-50);
   --Schemes-On-Background: var(--Schemes-On-Surface);
-  --Schemes-On-Error: var(--white-400-white);
+  --Schemes-On-Error: var(--white-750-white);
   --Schemes-On-Error-Container: var(--Palettes-Error-Error-250);
   --Schemes-On-Inverse-Surface: var(--Palettes-Neutral-Neutral-750);
   --Schemes-On-Inverse-Surface-Bright: var(--Palettes-Neutral-Neutral-750);
-  --Schemes-On-Primary: var(--white-400-white);
+  --Schemes-On-Primary: var(--white-750-white);
   --Schemes-On-Primary-Container: var(--Palettes-Primary-Primary-50);
   --Schemes-On-Primary-Fixed: var(--Palettes-Primary-Primary-100);
   --Schemes-On-Primary-Fixed-Variant: var(--Palettes-Primary-Primary-50);
@@ -26,13 +26,13 @@
   --Schemes-On-Secondary-Container: var(--Palettes-Secondary-Secondary-750);
   --Schemes-On-Secondary-Fixed: var(--Palettes-Secondary-Secondary-50);
   --Schemes-On-Secondary-Fixed-Variant: var(--Palettes-Secondary-Secondary-250);
-  --Schemes-On-Surface: var(--black-400-black);
+  --Schemes-On-Surface: var(--black-50-black);
   --Schemes-On-Surface-Variant: var(--Palettes-Neutral-Neutral-50);
   --Schemes-On-Tertiary: var(--Palettes-Tertiary-Tertiary-750);
   --Schemes-On-Tertiary-Container: var(--Palettes-Tertiary-Tertiary-750);
   --Schemes-On-Tertiary-Fixed: var(--Palettes-Tertiary-Tertiary-150);
   --Schemes-On-Tertiary-Fixed-Variant: var(--Palettes-Tertiary-Tertiary-50);
-  --Schemes-Primary: var(--Palettes-Primary-Primary-400);
+  --Schemes-Primary: var(--sixers-blue-300-sixers-blue);
   --Schemes-Primary-Container: var(--Palettes-Primary-Primary-650);
   --Schemes-Primary-Fixed: var(--Palettes-Primary-Primary-650);
   --Schemes-Primary-Fixed-Dim: var(--Palettes-Primary-Primary-400);
@@ -46,7 +46,7 @@
   --Schemes-Surface-Bright: var(--Palettes-Neutral-Neutral-750);
   --Schemes-Surface-Container: var(--Palettes-Neutral-Neutral-500);
   --Schemes-Surface-Container-High: var(--Palettes-Neutral-Neutral-400);
-  --Schemes-Surface-Container-Highest: var(--Palettes-Neutral-Neutral-300);
+  --Schemes-Surface-Container-Highest: var(--Palettes-Neutral-Neutral-350);
   --Schemes-Surface-Container-Low: var(--Palettes-Neutral-Neutral-600);
   --Schemes-Surface-Container-Lowest: var(--Palettes-Neutral-Neutral-750);
   --Schemes-Surface-Dim: var(--Palettes-Neutral-Neutral-400);
